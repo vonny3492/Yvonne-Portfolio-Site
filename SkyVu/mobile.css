@@ -1,0 +1,319 @@
+/*this pertains to all pages*/
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color:#033;
+	font-size: 70px;
+}
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color:#FF9999;
+	font-size: 55px; 
+	border-width: 5px 0px 0px 0px;
+	border-style: solid;
+	border-color:#033;
+	padding-top: 20px;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color:#033;
+}
+
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	color:#033;
+}
+
+
+h5 {
+	display:none;
+}
+
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.5em;
+}
+
+#container {
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(images/background-01.png);
+	background-repeat: no-repeat;
+	background-position: top;
+} 
+
+#header {
+	height:450px;
+}
+
+#logo, #contact {
+	float: left;
+}
+
+
+#contact {
+	text-align: right;
+	color:#FFF;
+	width: 350px;
+	margin-right: 20px;
+	}
+	
+	.img {
+		webkit-box-shadow: 0px 0px 30px 0px #B2B3B2;
+        box-shadow: 0px 0px 30px 0px #B2B3B2;
+		padding: 5px;
+		background-color:#FFF;
+	}
+	
+	
+	a {
+		text-decoration: none;
+		color:inherit;
+	}
+	
+	
+	.button {
+	background-color: #FF9999;
+	padding: 10px;
+	webkit-border-radius: 15px;
+	border-radius: 15px;
+	webkit-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #333333;
+	text-align: center;
+	font-family: "Josefin Slab", serif;
+	letter-spacing: .125em;
+	}
+	
+#navbar {
+	margin-left:auto;
+	margin-right: auto;
+	width: 920px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: auto;
+}
+
+	.nav {
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+	width: 800px;
+	background-color: #FFFCEB;
+	padding: 20px;
+	border-color: #033;
+	border-style: solid;
+	border-width: 10px;
+	webkit-border-radius: 15px;
+	border-radius: 15px;
+	webkit-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	}
+	
+	
+	#footer {
+		text-align: center;
+		padding: 20px 50px 20px 50px;
+		margin-top: 40px;
+		background-color: #1C3343;
+		color:#FFFCEB;
+		line-height: 1.5em;
+	}
+	
+	
+/*this applies to all non-home pages*/
+
+#show1 {
+	margin: 5px;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6 {
+	float: left;
+	}
+
+.column1 {
+	width: 50%;
+	text-alight: center;
+	background-color:#FFF;
+}
+
+.column2 {
+	width: 30%;
+	text-align: left;
+	padding-left: 5%;
+}
+
+.column3 {
+	width: 10%;
+	text-align: center;
+	margin-top: 30%;
+	padding-right:5%;
+}
+
+.column4 {
+	width:80%;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top:0px;
+}
+
+/* this applies to rules page */
+
+ul {
+	text-align:left;
+	font-size: 40px;
+	line-height: 1em;
+	padding-right:20px;
+}
+
+li {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	line-height: 1.5em;
+	list-style-image:url(images/bullet2-04.png);
+	list-style-position:outside;
+}
+
+li li {
+	list-style-image:url(images/bullet-04.png);
+	font-weight: 400;	
+}
+
+/*this applies to the concessions page*/
+	
+	dl {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
+		line-height: 1.5em;
+		font-size: 35px;
+	}
+	
+	dt {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		margin-top: .75em;
+	}
+	
+/* this applies to review page */
+
+form {
+	font-size: 40px;
+}
+
+#head, #x {
+	float: left;
+}
+
+#head p{
+	color:#FFFCEB;
+	font-size: 80px;
+	font-family: 'Josefin Slab', serif;
+	line-height: 1em;
+	margin-left: 20px;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#x {
+	margin-left: 180px;
+}
+
+#box {
+	position: absolute;
+	margin-left: 20px;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 850px;
+	height: 1400px;
+	background-color: #FF9999;
+	padding: 20px;
+	border-color: #FFFCEB;
+	border-style: solid;
+	border-width: 10px;
+	webkit-border-radius: 15px;
+	border-radius: 15px;
+	webkit-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;
+	text-align: left;
+	z-index: 1;
+}
+
+.article {
+	float: left;
+	background-color:#FFF;
+	width: 790px;
+	padding: 20px;
+	margin: 10px;
+	webkit-border-radius: 15px;
+	border-radius: 15px;
+	webkit-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;
+}
+
+.article1, .article2, .article3 {
+	float: left;
+}
+
+.article1 {
+	width: 240px;
+}
+
+.article2 {
+	width: 510px;
+	padding-left: 20px;
+}
+
+.article3 {
+	background-color:#033;
+	width: 460px;
+	margin-left: 220px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	webkit-border-radius: 15px;
+	border-radius: 15px;
+	webkit-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;
+}
+
+
+
+/* this applies to location*/
+
+#address {
+		font-family: 'Josefin Slab', serif;
+		color:#FFFCEB;
+		font-size: 32px;
+		text-align: left;
+		padding: 5px;
+		letter-spacing: normal;
+	}
+	
+.column5 {
+	width: 50%;
+	text-align: left;
+}
+
+.column6 {
+	text-align: center;
+	width: 380px;
+	margin-top: 10%;
+	margin-left: 20px;
+}

@@ -1,0 +1,3 @@
+# Use PHP7.2 as default
+AddHandler application/x-httpd-ea-php72 .php
+AddHandler application/x-httpd-ea-php54 .php

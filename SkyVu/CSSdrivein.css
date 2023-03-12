@@ -1,0 +1,219 @@
+/*this pertains to all pages*/
+h1 {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	color:#033;
+
+}
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	color:#033;
+	
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color:#EEAEA5;
+
+}
+
+h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color:#033;
+}
+
+h5 {
+	display:none;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+
+#container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/background-01.png);
+	background-repeat: no-repeat;
+	background-position: top;
+} 
+
+#header {
+	height:450px;
+}
+
+#logo, #contact {
+	float: left;
+	width: 50%;
+}
+
+	#logo {
+	width: 475px;
+	margin-right:245px;
+	}
+
+	#contact {
+	text-align: right;
+	color:#FFF5E0;
+	width: 225px;
+	margin-right:0px;
+
+	}
+
+	#navbar {
+	float:right;
+	text-align: right;
+	width: 960px;
+	margin-bottom: 40px;
+	}
+
+	#navbar a {
+	color:#FFF5E0;
+	text-decoration: none;
+            	
+	}
+
+	#navbar li {
+	display: inline;
+	list-style-type: none;
+	padding: 1em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px; 
+	}
+	
+	#footer {
+		text-align: center;
+		padding: 20px 50px 20px 50px;
+		margin-top: 40px;
+		background-color: #1C3343;
+		color:#FFF5E0;
+		line-height: 1.5em;
+	}
+	
+	
+	#content {
+		margin-right: auto;
+		margin-left: auto;
+		overflow:auto;
+		width: 800px;
+		background-color:#FFF;
+		padding: 20px;
+		webkit-border-radius: 15px; 
+        border-radius: 15px;
+		webkit-box-shadow: 0px 0px 20px 0px #666;
+        box-shadow: 0px 0px 20px 0px #666;
+	}
+
+	
+	#pagetitle {
+		text-align:center;
+	}
+	
+	.img {
+		webkit-box-shadow: 0px 0px 30px 0px #B2B3B2;
+        box-shadow: 0px 0px 30px 0px #B2B3B2;
+		padding: 5px;
+	}
+
+		
+/*this begins shows and showtimes, location and home exclusive css*/
+
+.column3 H3 {
+	height: 2.15em;
+}
+	
+.column1, .column2, .column3 {
+	width: 33%;
+	float: left;
+	background-color: #FFF;
+	text-align: center;
+		}
+		
+.column2 {
+	padding-top: 7em;
+	background-color: transparent;
+	
+	}
+	
+	#address {
+		font-family: 'Josefin Slab', serif;
+		color:#EEAEA5;
+	}
+	
+	
+	
+/*this begins location Admission/rules and concessions css*/
+.article1 {
+	float: left;
+	width: 45%;
+	background-color: #FFF;
+	text-align: left;
+	margin: 1%;	
+}
+	
+	.article1 iframe {
+		webkit-box-shadow: 0px 0px 30px 0px #B2B3B2;
+        box-shadow: 0px 0px 30px 0px #B2B3B2;
+		clear:right;
+		padding: 5px;
+	}
+	
+	.article1 p {
+		width: 320px;
+		text-align:justify;
+	}
+		
+	.article1 H3 {
+		width: 290px;
+	}
+	
+.article2 {
+	float: left;
+	width: 48%;
+	background-color: #FFF;
+	text-align: left;
+
+	padding-left: 30px;	
+}
+
+	.article2 ul {
+		width: 300px;
+		text-align:justify;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 18px;
+	}
+	
+	.article2 li {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		line-height: 1.25em;
+		list-style-image:url(images/bullet2-04.png);
+		list-style-position:outside;
+	}
+	
+	.article2 li li {
+		list-style-image:url(images/bullet-04.png);
+	}
+	
+	dl {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 400;
+		line-height: 1.25em;
+	}
+	
+	dt {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
+	}

@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mobile.css" />
+		<script type="text/javascript" src="js/jquery.min.js"> </script>
+		<script type="text/javascript" src="js/script.js"> </script>
+	<!-- 	 I think I need these? -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.chained.min.js"></script>
+	<!--                           -->
+		<title>Twin Cities Library App</title>
+	</head>
+
+	<body>
+	
+	<div id="ugh">
+		<div id="container"> 
+			
+			<a href="home.html"><div id="title">
+				<img src="images/logo.svg" width=100%> 
+			</div></a>
+			
+			<div id="searchbar">
+				
+				<div class="search">
+					
+					<form class="search" method="get" action="index.html" >
+		 				<input type="text" name="searchbar" placeholder="what can we help you find?"/> 
+		 			</form>
+		 			
+				</div>
+				
+				<div id="filters">
+					
+					<div class="filters" id="sort">
+						<select>
+							<option value="sort by"><p>sort by?</p></option>
+							<option value="keyword"><p>sort by RELEVANCE</p></option>
+  							<option value="title"><p>sort by TITLE</p></option>
+ 							<option value="author"><p>sort by AUTHOR</p></option>
+  							<option value="subject"><p>sort by CALL NUMBER</p></option>
+  							<option value="series"><p>sort by POPULARITY</p></option>
+						</select>
+					</div>
+  
+					<div class="filters" id="limit"> 
+						<div id="replaced">
+						<select id="mark" name="mark">
+							<option value="limit by"><p>limit by?</p></option>
+							<option value="availability"><p>limit by AVAILABILITY</p></option>
+  							<option value="format"><p>limit by FORMAT</p></option>
+ 							<option value="library"><p>limit by LIBRARY</p></option>
+  							<option value="publication"><p>limit by PUBLICATION DATE</p></option>
+  							<option value="author"><p>limit by AUTHOR</p></option>
+  							<option value="series"><p>limit by SERIES</p></option>
+  							<option value="topic"><p>limit by TOPIC</p></option>
+  							<option value="NvF"><p>limit by NONFICTION VS FICTION</p></option>
+						</select>
+						</div>
+						
+							<div id="replacer">
+							<select id="series" name="series">
+							
+						<!-- 	Format -->
+								<option value="format" class="format"><p>what format?</p></option>
+								<option value="print" class="format"><p>Printed Book</p></option>
+  								<option value="ebook" class="format"><p>Ebook</p></option>
+ 								<option value="cd" class="format"><p>Compact Disc</p></option>
+  								<option value="dvd" class="format"><p>DVD</p></option>
+  								<option value="software" class="format"><p>Software</p></option>
+  								<option value="braille book" class="format"><p>Braille Book</p></option>
+  								<option value="audiobook" class="format"><p>Audiobook</p></option>
+  								<option value="largeprint" class="format"><p>Large Print Book</p></option>
+  								<option value="sheetmusic" class="format"><p>Sheet Music</p></option>
+  					
+  						<!-- 	Library -->
+  								<option class="library"><p>Choose a library?</p></option>
+								<option class="library"><p>Arlington Hills</p></option>
+  								<option class="library"><p>Bookmobile</p></option>
+ 								<option class="library"><p>Central Library</p></option>
+  								<option class="library"><p>Dayton's Bluff</p></option>
+  								<option class="library"><p>Hamline Midway</p></option>
+  								<option class="library"><p>Hayden Heights</p></option>
+  								<option class="library"><p>Highland Park</p></option>
+  								<option class="library"><p>Merriam Park</p></option>
+  								<option class="library"><p>Rice Street</p></option>
+  								<option class="library"><p>Riverview</p></option>
+  								<option class="library"><p>Rondo</p></option>
+  								<option class="library"><p>St.Anthony Park</p></option>
+  								<option class="library"><p>Sun Ray</p></option>
+  								<option class="library"><p>West 7th</p></option>
+  								<option class="library"><p>Debra S. Fish - St.Paul</p></option>
+  								<option class="library"><p>Debra S. Fish - MPLS</p></option>
+  								
+  						<!-- 	Publication -->
+  								<option class="publication"><p>Published when?</p></option>
+  								<option class="publication"><p>1999</p></option>
+  								<option class="publication"><p>2002</p></option>
+  								<option class="publication"><p>2012</p></option>
+  								<option class="publication"><p>2007</p></option>
+  								<option class="publication"><p>2010</p></option>
+  								<option class="publication"><p>2003</p></option>
+  								<option class="publication"><p>2006</p></option>
+  								<option class="publication"><p>2001</p></option>
+  								<option class="publication"><p>2005</p></option>
+  								<option class="publication"><p>2000</p></option>
+  								<option class="publication"><p>2011</p></option>
+  								<option class="publication"><p>2009</p></option>
+  								
+  						<!-- 	Author -->
+  								<option class="author"><p>Who's the author?</p></option>
+  								<option class="author"><p>J.K. Rowling</p></option>
+  								<option class="author"><p>John Williams</p></option>
+  								<option class="author"><p>Alexandre Desplat</p></option>
+  								<option class="author"><p>Jim Dale</p></option>
+  								<option class="author"><p>Mary GrandPré</p></option>
+  								
+  						<!-- 	Series -->
+  								<option class="series"><p>What's the series?</p></option>
+  								<option class="series"><p>Harry Potter</p></option>
+  								
+  						<!-- 	Topic -->
+  								<option class="topic"><p>What's the topic?</p></option>
+  								<option class="topic"><p>Wizards</p></option>
+  								<option class="topic"><p>Magic</p></option>
+  								<option class="topic"><p>Schools</p></option>
+  								<option class="topic"><p>Hogwarts</p></option>
+  								<option class="topic"><p>Harry Potter</p></option>
+  								<option class="topic"><p>Blind</p></option>
+  								<option class="topic"><p>Hermione Granger</p></option>
+  								<option class="topic"><p>Ron Weasley</p></option>
+  								<option class="topic"><p>Juvenile</p></option>
+  								
+  						<!-- 	NvF -->
+  								<option class="NvF"><p>NonFiction or Fiction?</p></option>
+  								<option class="NvF"><p>NonFiction</p></option>
+  								<option class="NvF"><p>Fiction</p></option>
+  										
+						</select>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div id="main">
+				<h1> RESULTS </h1>
+				
+				<div id="disappear">
+				<div id="disappear1">
+					<h4> click to learn more about the item</h4>
+				</div>
+				
+				<div id="disappear2">
+					<h4> click to add item to list or request it!</h4>
+				</div>
+				</div>
+				<div id="items">
+					
+					<div id="one" class="item">
+				 		<div class="add" id="add1"> 
+				 			<h1> + </h1> 
+				 		</div>
+				 		<a href="item.html"><div class="info"> 
+				 			<img src="images/book.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> E-book </p>
+				 			</div></a>
+				 		</div>
+					</div>
+				 	
+				 		<div class="dropdown" id="dropdown1"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="two" class="item">
+				 		<div class="add" id="add2"> <h1> + </h1> </div>
+				 		<div class="info"> 
+				 			<img src="images/dvd.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> Chris Columbus </p>
+				 			<p> DVD </p>
+				 			</div>
+				 		</div>	
+				 	</div>
+				 		
+				 		<div class="dropdown" id="dropdown2"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="three" class="item">
+				 		<div class="add" id="add3"> <h1> + </h1> </div>
+				 		<div class="info"> 
+				 			<img src="images/book.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> Large Print book </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	
+				 		<div class="dropdown" id="dropdown3"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="four" class="item">
+				 		<div class="add" id="add4"> <h1> + </h1> </div>
+				 		<div class="info"> 
+				 			<img src="images/book.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> Braille book </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	
+				 		<div class="dropdown" id="dropdown4"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="five" class="item">
+				 		<div class="add" id="add5"> <h1> + </h1> </div>
+				 		<div class="info">
+				 			<img src="images/audio.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> Audio book - CD </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 		
+				 		<div class="dropdown" id="dropdown5"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="six" class="item">
+				 		<div class="add" id="add6"> <h1> + </h1> </div>
+				 		<div class="info">
+				 			<img src="images/book.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> Print Book </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	
+				 		<div class="dropdown" id="dropdown6"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="seven" class="item">
+				 		<div class="add" id="add7"> <h1> + </h1> </div>
+				 		<div class="info">
+				 			<img src="images/cd.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter and the Chamber of Secrets: Original Motion Picture Soundtrack </h3> 
+				 			<p> John Williams</p>
+				 			<p> Soundtrack CD </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	
+				 		<div class="dropdown" id="dropdown7"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+ <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+				 	
+				 	<div id="eight" class="item">
+				 		<div class="add" id="add8"> <h1> + </h1> </div>
+				 		<div class="info">
+				 			<img src="images/spanish.jpg" width=100%>
+				 			<div class="type">
+				 			<h3> Harry Potter y la Camara Secreta </h3> 
+				 			<p> J.K. Rowling </p>
+				 			<p> Spanish Edition Print Book </p>
+				 			</div>
+				 		</div>
+				 	</div>
+				 	
+				 		<div class="dropdown" id="dropdown8"> 
+<div class="request">
+	<h2>Request Item</h2>
+ 
+ 	<div class="float">
+		<div class="options">
+			<select>
+	<option><p>Choose a St.Paul library?</p></option>
+	<option><p>Arlington Hills</p></option>
+  	<option><p>Bookmobile</p></option>
+ 	<option><p>Central Library</p></option>
+  	<option><p>Dayton's Bluff</p></option>
+  	<option><p>Hamline Midway</p></option>
+  	<option><p>Hayden Heights</p></option>
+  	<option><p>Highland Park</p></option>
+  	<option><p>Merriam Park</p></option>
+  	<option><p>Rice Street</p></option>
+  	<option><p>Riverview</p></option>
+  	<option><p>Rondo</p></option>
+  	<option><p>St.Anthony Park</p></option>
+  	<option><p>Sun Ray</p></option>
+  	<option><p>West 7th</p></option>
+  	<option><p>Debra S. Fish - St.Paul</p></option>
+  	<option><p>Debra S. Fish - Minneapolis</p></option>
+</select>
+		</div>
+
+		<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+	</div>
+</div>
+
+<div class="list">
+	<h2>Add It To A goodreads List</h2>
+
+	<div class="float">
+		<div class="options">
+			 <select>
+	<option><p>which list?</p></option>
+	<option><p>Already Read</p></option>
+  	<option><p>Current Reads</p></option>
+ 	<option><p>Want to Read: Fiction</p></option>
+  	<option><p>Want to Read: Non-Fiction</p></option>
+</select>
+		</div>
+
+		<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+	</div>
+</div>
+</div>
+
+				</div>
+				
+			</div>
+			
+
+	</div>
+	
+</div>
+	
+	<a href="goodreads.com">
+	<footer>
+		<p> partnered with </p>
+		<img src="images/goodreads.jpg" width="500px">
+	</footer></a>
+		</body>
+</html>
+

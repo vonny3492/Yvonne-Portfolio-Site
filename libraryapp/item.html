@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mobile.css" />
+		<script type="text/javascript" src="js/jquery.min.js"> </script>
+		<script type="text/javascript" src="js/script.js"> </script>
+		<title>Twin Cities Library App</title>
+	</head>
+
+	<body>
+	<div id="ugh">
+	<div id="container"> 
+			
+			<a href="home.html"><div id="title">
+				<img src="images/logo.svg" width=100%> 
+			</div></a>
+			
+			
+			<div id="main">
+				
+				<a href="results.html"><div id="return"> <img src="images/arrow.png"></img> <h5>return to search results </h5> </div></a>
+				
+				<div id="item">
+					<h1> Harry Potter and the Chamber of Secrets </h1>
+					
+					<div id="info">
+						<div id="sidebar">
+							<h6> J.K. Rowling </h6> </br>
+							<img src="images/book.jpg" width=100%>
+							<p class="bold"> Brief Description: </p> 
+				 					<p class="justify"> When the Chamber of Secrets is opened again at the Hogwarts School for Witchcraft and Wizardry, second-year student Harry Potter finds himself in danger from a dark power that has once more been released on the school. </p>
+								</br>
+							<div id="location"> <h2> LOCATION </h2> </div>
+							
+							<div class="dropdown" id="area"> 
+								<a href="http://sppl.lib.overdrive.com/ContentDetails.htm?ID=A79BB485-5A7B-4100-8661-3A4647E70BAF - Downloadable eBook"><h4>Download Book Here! </br> </br> at SPPL's Overdrive</h4></a>	
+							</div>
+
+
+						</div>
+				
+				 		<div id="words"> 
+				 				<p class="bold"> E-book </p>
+				 				<p> Published by Pottermore </br> (England) in 2012 </p>
+				 				<p> Available for Kindle and Adobe EPUB on Overdrive </p>
+				 				<p class="bold"> Book two of the Harry Potter Series </p>
+				 				<p class="bold"> Previous Book: </p> 
+				 					<p class="italic"> Harry Potter and the Sorcerer's Stone </p>
+				 				<p class="bold"> Next Book: </p> 
+				 					<p class="italic"> Harry Potter and the Prisoner of Azkaban </p>
+								<p class="bold"> Illustrator: </p> 
+									<p class="italic"> Mary Grandpré </p>
+								</br>
+								<p class="bold"> Subject: </p>
+									<p class="justify"> Harry Potter (fictional character), 
+										Hermione Granger (fictional character),
+										Ron Weasley (fictional character),
+										Hogwarts School of Witchcraft and Wizardry (Imaginary organization), 
+										Wizard, 
+										Magic,
+										Schools,
+										England,
+										fiction</p> 	
+				 		</div>
+						<div class="clear"> </div>
+					</div>
+				
+
+					<div id="additions">
+						<div class="add" id="add1"> <h1> + </h1> </div>
+						<div class="go" id="rec"> <h2> RECOMMEND </h2> </div>
+						<div class="go" id="rate"> <h2> RATING </h2> </div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+					<div class="dropdown" id="dropdown1"> 
+					<div class="request">
+						<h2>Request Item</h2>
+ 
+ 						<div class="float">
+							<div class="options">
+								<select>
+									<option><p>Choose a St.Paul library?</p></option>
+									<option><p>Arlington Hills</p></option>
+  									<option><p>Bookmobile</p></option>
+ 									<option><p>Central Library</p></option>
+  									<option><p>Dayton's Bluff</p></option>
+  									<option><p>Hamline Midway</p></option>
+  									<option><p>Hayden Heights</p></option>
+  									<option><p>Highland Park</p></option>
+  									<option><p>Merriam Park</p></option>
+  									<option><p>Rice Street</p></option>
+  									<option><p>Riverview</p></option>
+  									<option><p>Rondo</p></option>
+  									<option><p>St.Anthony Park</p></option>
+  									<option><p>Sun Ray</p></option>
+  									<option><p>West 7th</p></option>
+  									<option><p>Debra S. Fish - St.Paul</p></option>
+  									<option><p>Debra S. Fish - Minneapolis</p></option>
+								</select>
+							</div>
+
+							<div class="go"> <a><h1> PLACE HOLD </h1></a> </div>
+						</div>
+					</div>
+
+					<div class="list">
+						<h2>Add It To A goodreads List</h2>
+
+						<div class="float">
+							<div class="options">
+ 								<select>
+									<option><p>which list?</p></option>
+									<option><p>Already Read</p></option>
+  									<option><p>Current Reads</p></option>
+ 									<option><p>Want to Read: Fiction</p></option>
+  									<option><p>Want to Read: Non-Fiction</p></option>
+								</select>
+							</div>
+
+							<div class="go" id="dumb"> <a><h1> ADD </h1></a> </div>
+						</div>
+					</div>	
+				</div>
+					
+					<div class="dropdown" id="recommend">
+					<div class="search">
+					<form class="search" method="get" action="results.html" >
+		 				<input type="text" name="searchbar" placeholder="Search your goodreads friends!"/> 
+		 			</form>
+					</div>
+	
+					<form class="comments" method="post">
+						<h4> Add a message! </h4>
+						<textarea name="comment" id="comment"/> </textarea>
+					</form>
+					</div>
+					
+					<div class="dropdown" id="rating">
+					<h4> Rate the book! </h4>
+					<img src="images/stars.png" width="100%"></img>
+					<div class="go" id="submit"> <h2> submit </h2> </div>
+					</div>
+		
+			</div>
+			
+	</div>
+	</div>
+	<footer>
+		<p> partnered with </p>
+		<img src="images/goodreads.jpg" width="500px">
+	</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,1104 @@
+/* type css ----------------------------------------- */		
+    	
+h1 {
+ 	color: white;
+	font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+	letter-spacing: 3.5px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 4.5em;
+	}
+
+h2 {
+	font-size: 4em;
+	letter-spacing: 2px;
+	color: white;
+	font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+	text-align: center;
+	letter-spacing: 8px;
+	}
+	
+	.go h2 {
+		letter-spacing: 5px;
+		}
+	
+h3 {
+	font-size: 3em;
+	letter-spacing: 3.5px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: left;
+	}
+	
+h4 {	
+	font-size: 2em;
+	letter-spacing: 3.5px;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	}
+
+h5 {
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	color: #001631;
+	font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+	text-align: center;
+	}
+
+h6 {
+	font-size: 2.75em;
+	letter-spacing: 3.5px;
+	color: black;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	margin: 35px 0 0 0;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+/* home page */
+
+#home {	
+	padding: 50% 15% 8% 15%;
+	text-align: center;
+	height: 1000px;
+	}
+	
+	#home h4 {
+		font-size: 10em;
+		}
+
+/* Primary Divs */
+
+body {
+	margin: 0;
+}
+
+#ugh {
+	background: url('../images/wood.jpg') repeat-y center center fixed;
+	-webkit-background-size: 980px;
+    -moz-background-size: 980px;
+    -background-size: 980px;
+    }
+
+#container {
+	max-width: 980px;
+	padding-bottom: 50px;
+	margin: auto;
+	}
+
+#title {
+	padding: 8% 25% 8% 25%;
+	text-align: center;
+	}
+
+#searchbar {
+	height: 400px;
+	}
+	
+#main {
+	margin: 70px 0px 100px 0px;
+	}
+	
+	
+
+/* Search CSS (within searchbar div) -----------------------------------------  */
+	
+	.search {
+		margin: 1%;
+	}
+
+		input {
+    		font-family: "Trebuchet MS", Helvetica, sans-serif;
+    		font-size: 2.75em;
+    		color: black;
+    	}
+
+			.search input {    
+				height: 150px;
+   				width: 100%;
+    			padding: 0 24px 0 50px;
+    			background: white url("../images/magnify.png") 100% no-repeat;
+    			background-size: 70px 70px;
+    			background-position: 96%;
+    		
+    				border-width: 1px;
+    				border-style: solid;
+    				border-color: #a8acbc #babdcc #c0c3d2;
+    				border-radius: 20px;
+    		
+    		
+					-webkit-box-sizing: border-box;
+    				-moz-box-sizing: border-box;
+    				-ms-box-sizing: border-box;
+    				-o-box-sizing: border-box;
+    				box-sizing: border-box;
+				}
+
+
+				.search input:focus {
+    				outline: none;
+   					border-color: #66b1ee;
+    				-webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    				-moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    				-ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+    				-o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+   					box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+				}
+	
+	
+
+/* Filters CSS (within searchbar div) ----------------------------------------- */
+
+#filters { 
+	margin-top: 3%;
+	margin-left: 2%;
+	}
+	
+/* sort and go CSS (within filters div) ----------------------------------------- */	
+	
+	#search {
+		position: relative;
+		float: left;
+		width: 51%;
+   		margin-right: 2%;
+		}
+		
+		#search select {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 2.5em;
+				text-align: center;
+				letter-spacing: 1.5pt;
+				}
+
+	
+		select {
+			-webkit-appearance: none;
+    		-webkit-user-select: none;
+    
+   				border-width: 1px;
+   				border-style: solid;
+    			border-color: #a8acbc #babdcc #c0c3d2;
+    			border-radius: 20px;
+    
+    		height: 150px;
+    		width: 100%;
+    		padding-left: 30px;
+    		}
+
+
+	.go {
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 140px;
+	padding-top: 10px;
+
+    	background: #D42325;
+    	
+    	-webkit-padding-end: 2%;
+   		-webkit-padding-start: 2%;
+    	border-radius: 80px;
+	}
+
+	
+
+
+/* buttons CSS (within main div) ----------------------------------------- */		
+	
+.buttons {
+		-webkit-padding-end: 2%;
+   		-webkit-padding-start: 2%;
+    	-webkit-user-select: none;
+    	border-radius: 20px;
+    	border-width: 0px 0px 9px 0px;
+   		border-style: solid;
+   		height: 150px;
+    	}
+
+#libraries {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #173769;
+	background: url('../images/book1.svg') center;
+	background-size: 102%;
+	line-height: 150px;
+	}
+
+#events {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #071C4F;
+	background: url('../images/book2.svg') center;
+	background-size: 102%;
+	line-height: 150px;
+	}
+	
+#account {
+	margin: 0% 2% 2% 2%; 
+	background: #071C4F;
+	margin-bottom: 150px;
+	border-color: black;
+	background: url('../images/book3.svg') center;
+	background-size: 102%;
+	line-height: 150px;
+	}	
+	
+#checkedout {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #17757d;
+	background: url('../images/book4.svg') center; 
+	background-size: 102%;
+	line-height: 150px;
+	}
+
+#holds {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #11565c;
+	background: url('../images/book5.svg') center;  
+	background-size: 102%;
+	line-height: 150px;
+	}
+
+#lists {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #0b373b;
+	background: url('../images/book6.svg') center; 
+	background-size: 102%;
+	line-height: 150px;
+	}
+
+#currentread {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #08282a;
+	background: url('../images/book7.svg') center;
+	background-size: 102%;
+	line-height: 150px;
+	}
+    
+
+
+
+
+/* Results Page CSS ----------------------------------------- */    	
+
+
+/* filters CSS ----------------------------------------- */ 
+   	
+.filters {
+	position: relative;
+	float: left;
+	width: 48%;
+ 	margin-right: 2%;
+}
+
+	.filters select {
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				font-size: 2.5em;
+				letter-spacing: 1pt;
+				color: white;
+				padding-left: 15px;
+				}
+				
+	#limit select {
+		background: #570026;
+		}
+		
+			#replacer {
+				display: none;
+				}
+
+	#sort select {
+		background: #371B2B;
+		}
+		
+
+
+
+/* results CSS ----------------------------------------- */ 
+
+	#disappear {
+		margin: auto;
+		}
+	
+	#disappear1 {
+		width: 300px;
+   		height: 231px;
+   		background: url('../images/disappear1.svg') no-repeat center;
+   		position: absolute;
+   		top: 800px;
+   		left: 950px;
+   		z-index: 1;
+   		padding: 0px 25px 0px 25px;
+   		opacity: .95;
+   		}
+
+	#disappear2 {
+		width: 400px;
+   		height: 231px;
+   		background: url('../images/disappear2.svg') no-repeat center;
+   		position: absolute;
+   		top: 850px;
+   		left: 1410px;
+   		z-index: 1;
+   		padding: 0px 25px 0px 25px;
+   		opacity: .95;
+   		}
+   		
+   		#disappear2 h4 {
+   			width: 300px;
+   			padding-left: 50px;
+   			}
+   		
+
+.item {
+	background-color:rgba(255,255,255,0.7);
+	height: 300px;
+	width: 950px;
+	margin: 25px 15px 0 15px;
+	border-radius: 20px;
+	}
+
+	.add {
+		position: relative;
+		float: right;
+		width: 175px;
+		height: inherit;
+		background: #002635;
+		text-align: center;
+		}
+	
+	.item .add h1 {
+			color: rgba(255,255,255,0.7);
+			font-size: 10em;
+			line-height: 300px;
+			margin: 0;
+			}
+	
+	.info {
+		float: left;
+		width: 745px;
+		color: #001631;
+		margin-top: 20px;
+		margin-left: 20px;
+		}
+		
+		.info h3 {
+		margin: 0;
+		padding-bottom: .5em;
+		color: black;
+		}
+	
+		.info p {
+		font-family:"Trebuchet MS", Helvetica, sans-serif;
+		font-size: 2.25em;
+		line-height: 1.5em;
+		margin: 0;
+		color: black;
+		}
+		
+		.info img {
+			width: 155px;
+			float: left;
+			postion: relative;
+			margin: 0;
+			padding-top: 10px;
+			padding-right: 25px;
+			}
+	
+	.type {
+		float: left;
+		postion: relative;
+		width: 540px;
+		padding-right: 25px;
+		}
+
+		/*item*/ #seven {
+			height: 400px;
+			}
+	
+
+/* Request CSS -----------------------------------------  */
+
+.dropdown {
+	border-style: solid;
+	border-width: 1px;
+	margin: 25px 15px 0 15px;
+	width: 950px;
+	height: 830px;
+	background: #001631;
+	border-radius: 20px;
+	display: none;
+	}
+		
+	.dropdown select {
+		padding-left: 25px;
+    	font-size: 2.25em;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+		letter-spacing: 1.5pt;
+		color: black;
+    	}
+
+.float {
+	margin: 0% 2% 0% 2%;
+	}
+
+	.float .go {
+		postion: relative;
+		float: left;
+		width: 29%;
+		font-size: .7em;
+		line-height: 50px;
+		margin: 0;
+		background: #567fb3;
+		}	
+	
+#dumb {
+	line-height: 50px;
+	}
+	
+.options {
+	postion: relative;
+	float: left;
+	width: 65%;
+   	margin-right: 2%;
+	}
+		
+
+/* goodreads list options fixes*/   		
+
+.list {
+	margin-top: 280px;
+	}
+	
+	.list h2 {
+		width: 700px;
+		padding-left: 135px;
+		}
+		
+		
+/* Item CSS -----------------------------------------  */
+
+#return {
+	margin: 0 0% 3% 0%;
+	background-color: rgba(255,255,255,.25);
+	height: 100px;
+	}
+	
+	#return img {
+		float: left;
+		margin: 25px 0px 0px 35px;
+		opacity: .75;
+		height: 45px;
+		}
+		
+	#return h5 {
+		float: left;
+		margin: 22px 0 0 60px;
+		}
+	
+
+#words p {
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		margin: 0 0 25px 0;
+		font-size: 2.5em;
+		}	
+		
+	 .bold {
+		line-height: 90%;
+		font-weight: bold;
+		font-size: 2em;
+		padding-bottom: 0;
+		padding-top: 50px;
+		}
+
+	.italic {
+		font-style: italic;	
+		line-height: 98%;	
+		}
+	
+#area {
+	width: 400px;
+	height: 250px;
+	margin: 15px 0 0 0;
+	color: white;
+	text-decoration: none;
+	}	
+	
+	#area h4 {
+		width: 350px;
+		padding-left: 25px;
+		}	
+	
+
+#item {
+	clear: both;
+	}
+
+#info {
+	background-color:rgba(255,255,255,0.7);
+	border-radius: 20px;
+	margin: 0 2% 2% 2%;
+	padding: 2%;
+	clear: both;
+	}
+
+#words {
+	width: 400px;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	}
+
+#sidebar {
+	width: 400px;
+	float: left;
+	font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+	line-height: 35px; 
+	margin-left: 25px;
+	}
+	
+	#sidebar p {
+		font-size: 2em;
+		line-height: 1.25em;
+		}
+	
+#location {
+	position: relative;
+	background: #001631;
+	font-size: 1em;
+	width: 330px;
+	height: 130px;
+	line-height: 130px;
+	padding: 0 30px 0 35px;
+	font-size: .75em;
+	border-radius: 15px;
+	}
+
+	
+
+#additions {
+	position: relative;
+	clear: both;
+	margin: 50px 0 2% 0;
+	}
+	
+	#rate {
+		height: 150px;
+		width: 240px;
+		font-size: .75em;
+		padding: 0px 15px 0px 15px;
+		margin: 0 25px 0 10px;
+		border-radius: 15px;
+		}
+		
+	#rec {
+		height: 150px;
+		width: 400px;
+		font-size: .75em;
+		padding: 0px 15px 0px 15px;
+		margin: 0 20px 0 25px;
+		border-radius: 15px;
+		}
+		
+
+		#additions .add {
+			margin: 0 10px 0 25px;
+			height: 150px;
+			width: 150px;
+			line-height: 110px;
+			font-size: 2.25em;
+			}
+			
+			#dropdown1 {
+				clear: both;
+				}
+			
+			#recommend {
+				height: 480px;
+				padding: 2%;
+				width: 900px;
+				margin-top: 25px;
+				}
+				
+				.comments textarea {
+					margin: 0;
+					height: 200px;
+					width: 840px;
+    				background: white;
+    				border-width: 1px;
+    				border-style: solid;
+    				border-color: #a8acbc #babdcc #c0c3d2;
+    				border-radius: 20px;
+    				margin-left: 15px;
+    				margin-bottom: 25px;
+    		
+    		
+					-webkit-box-sizing: border-box;
+    				-moz-box-sizing: border-box;
+    				-ms-box-sizing: border-box;
+    				-o-box-sizing: border-box;
+    				box-sizing: border-box;
+    				}
+    				
+    				.comments h4 {
+    					margin-bottom: 10px;
+    					margin-top: 50px; 
+    					font-size: 3em;
+    					}
+			#rating {
+				height: 480px;
+				padding: 2%;
+				width: 900px;
+				}
+				
+				#rating h4 {
+					font-size: 3em;
+					margin: 0;
+					margin-bottom: 45px;
+					}
+				
+		#submit {
+			margin-top: 50px;
+			line-height: 25px;
+			margin-left: 250px;
+			}
+				
+.clear {
+	clear: both;
+	margin: 2%;
+	}
+
+
+
+
+/* My Account CSS -----------------------------------------  */
+
+#checkedout {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #17757d;
+	background: url('../images/book4.svg') center; 
+	background-size: 102%;
+	line-height: 150px;
+	}
+	
+	table {
+		text-align: left;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-size: 2em;
+		margin-left: 25px;
+		
+		}
+		
+		th {
+			padding: 25px;
+			vertical-align: top;
+			text-align: center;
+			border-bottom: solid 1px;
+			}
+			
+			#checked img {
+				width: 145px;
+				}
+			
+			.bold2 {
+				font-size: 1em;
+				font-weight: bold;
+				padding-left: 25px;
+				}
+		
+			.shift {
+				font-size: .75em;
+				padding-left: 25px;
+				}
+				
+		#renew {
+			font-size: .5em;
+			width: 500px;
+			height: 100px;
+			margin-top: 25px;
+			margin-left: 22%;
+			margin-bottom: 25px;
+			}
+			
+/* check boxes */
+input[type=checkbox] {
+	visibility: hidden;
+}
+			
+			.squaredThree {
+				width: 55px;	
+				margin-left: 25px;
+				position: relative;
+			}
+
+			.squaredThree label {
+				position: absolute;
+				width: 55px;
+				height: 55px;
+				top: 0;
+				border-radius: 10px;
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+			.squaredThree label:after {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);
+			opacity: 0;
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 25px;
+			top: 5px;
+			left: 15px;
+			background: transparent;
+			border: 10px solid #fcfff4;
+			border-top: none;
+			border-right: none;
+			
+		-moz-transform: scaleX(-1) rotate(-45deg);
+        -o-transform: scaleX(-1) rotate(-45deg);
+        -webkit-transform: scaleX(-1) rotate(-45deg);
+        transform: scaleX(-1) rotate(-45deg);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+			}
+
+			.squaredThree input[type=checkbox]:checked + label:after {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+	
+			.squared4 {
+				width: 55px;
+				margin-left: 25px;	
+				position: relative;
+			}
+
+			.squared4 label {
+				position: absolute;
+				width: 55px;
+				height: 55px;
+				top: 0;
+				border-radius: 10px;
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+			.squared4 label:after {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);
+			opacity: 0;
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 25px;
+			top: 5px;
+			left: 15px;
+			background: transparent;
+			border: 10px solid #fcfff4;
+			border-top: none;
+			border-right: none;
+			
+		-moz-transform: scaleX(-1) rotate(-45deg);
+        -o-transform: scaleX(-1) rotate(-45deg);
+        -webkit-transform: scaleX(-1) rotate(-45deg);
+        transform: scaleX(-1) rotate(-45deg);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+			}
+
+			.squared4 input[type=checkbox]:checked + label:after {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+			
+			.squared5 {
+				width: 55px;	
+				position: relative;
+			}
+
+			.squared5 label {
+				position: absolute;
+				width: 55px;
+				height: 55px;
+				top: 0;
+				border-radius: 10px;
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+			.squared5 label:after {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);
+			opacity: 0;
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 25px;
+			top: 5px;
+			left: 15px;
+			background: transparent;
+			border: 10px solid #fcfff4;
+			border-top: none;
+			border-right: none;
+			
+		-moz-transform: scaleX(-1) rotate(-45deg);
+        -o-transform: scaleX(-1) rotate(-45deg);
+        -webkit-transform: scaleX(-1) rotate(-45deg);
+        transform: scaleX(-1) rotate(-45deg);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+			}
+
+			.squared5 input[type=checkbox]:checked + label:after {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+	
+				
+#holds {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #11565c;
+	background: url('../images/book5.svg') center;  
+	background-size: 102%;
+	line-height: 150px;
+	}
+
+	#choose {
+		width: 150px;
+		padding-left: 0px;
+		background: white;
+		}
+		
+	#choose select {
+		font-size: 1em;
+		padding-left: 1%;
+		height: 300px;
+		}
+	
+	#hold table {
+		text-align: center;
+		}
+
+#lists {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #0b373b;
+	background: url('../images/book6.svg') center; 
+	background-size: 102%;
+	line-height: 150px;
+	}
+	
+	#list {
+		width: 900px;
+		padding: 25px;
+		}
+		
+	.space {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		}
+		
+	.space select {
+		font-size: 2em;
+		width: 900px;
+		}
+
+#currentread {
+	margin: 0% 2% 2% 2%; 
+	margin-bottom: 150px;
+	border-color: #08282a;
+	background: url('../images/book7.svg') center;
+	background-size: 102%;
+	line-height: 150px;
+	}
+	
+	#current {
+		padding: 15px;
+		}
+		
+		#current img {
+			padding-left: 15px;
+			} 
+		#current textarea {
+			height: 100px;
+			width: 95%;
+			}
+		#current h1 {
+			color: black;
+			}
+		#current h4 {
+			color: black;
+			}
+		#current h6 {
+			text-align: center;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: .75em;
+			}
+	
+.dropdown2 {
+	margin: -120px 15px 0 15px;
+	width: 950px;
+	background: #d7f5f8;
+	border-radius: 20px;
+	display: none;
+	}
+    
+/* Libraries CSS */
+
+#gps {
+	float: left;
+	width: 150px;
+	height: 150px;
+	background: white;
+	border-radius: 50px;
+	margin: 1%;
+	margin-left: 2%;
+	margin-top: 1.5%;
+	}
+	
+	#gps img {
+		width: 75px;
+		padding: 10px 0 0 35px;
+		}
+	
+	.finder {
+		margin: 1%;
+		float: left;
+	}
+
+
+			.finder input {    
+				height: 150px;
+   				width: 760px;
+    			padding: 0 24px 0 50px;
+    		
+    				border-width: 1px;
+    				border-style: solid;
+    				border-color: #a8acbc #babdcc #c0c3d2;
+    				border-radius: 20px;
+    		
+    		
+					-webkit-box-sizing: border-box;
+    				-moz-box-sizing: border-box;
+    				-ms-box-sizing: border-box;
+    				-o-box-sizing: border-box;
+    				box-sizing: border-box;
+				}
+
+#libraryinfo {
+	margin: 2%;
+	width: 940px;
+	}
+	
+	#libraryinfo select {
+		padding-left: 25px;
+    	font-size: 2.25em;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+		letter-spacing: 1.5pt;
+		color: black;
+    	}
+    		
+/* events CSS */
+
+#eventlibraries {
+	float: none;
+	margin: 2%;
+	width: 940px;
+	}
+
+#eventlibraries select {
+		padding-left: 25px;
+    	font-size: 2.25em;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+		letter-spacing: 1.5pt;
+		color: black;
+    	}
+	
+.eventinfo {
+	float: none;
+	margin: 2%;
+	width: 900px;
+	padding: 2%;
+	background-color:rgba(255,255,255,0.7);
+	border-radius: 20px;
+	margin: 0 2% 2% 2%;
+	clear: both;
+	}
+	
+	.eventinfo h6 {
+		line-height: 3em;
+		margin-top: 0px;
+		}
+		
+	.eventinfo p {
+		font-size: 1.25em;
+		text-align: center;
+		font-family: 25em;
+    	font-family: "Trebuchet MS", Helvetica, sans-serif;
+		letter-spacing: 1.5pt;
+		}
+	
+
+/* Footer CSS -----------------------------------------  */
+
+footer {
+	padding: 2%;
+	padding-bottom: 4%;
+	clear: both;
+	margin: auto;
+	max-width: 980px;
+	margin-bottom: 40px;
+	background-color:white;
+	}
+	
+	footer img {
+		position: relative;
+		float: left;
+		padding-left: 20px;
+		text-align: center;
+		}
+		
+	footer p {
+		position: relative;
+		float: left;
+		text-align: center;
+		font-size: 2.5em;
+		padding-top: 30px;
+		padding-left: 60px;
+		margin: 0;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		color: black;
+		}
+
+

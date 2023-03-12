@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header {
+	background-image:url(title%20image.png);
+	width:680px;
+	height:126px;
+	margin:auto;
+	position:relative;
+	}
+.header a {
+	text-decoration:none;
+	color:#000;
+	}
+.header a:hover {
+	color:#999;
+	}
+.header img {
+	float:left;
+	}
+
+ul {
+	position:static;
+	bottom:0;
+	padding-left:0px;
+	}
+	
+li {
+	display: inline-block;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	padding-left:55px;
+	padding-top:90px;
+	}
+	
+body {
+	padding-right:0px;
+	width:950px;	
+	margin:auto;
+	}
+h1 {
+	font-size:24px;
+	font-style:none;
+	color:#333;
+	font:Verdana, Geneva, sans-serif;
+	}
+p {
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	text-align:justify;
+	}
+p.two {
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	text-align:center;
+	font-style:italic;
+	}
+	
+	
+footer {
+	align:center;
+	text-align:center;
+	margin:auto;
+	padding-top:40px;	
+	padding-left:80px;
+	}
+footer a {
+	font-family:Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	color:#000;
+	}
+footer a:hover {
+	color:#999;
+	}
+	
+
+.plant {
+	align:center;
+	}
+.plant img {
+	align:center;
+	padding-top:100px;
+	padding-left:460px;
+	padding-bottom:60px;
+	}
+
+
+
+.Cover {
+	padding:50px 50px 50px 50px;
+	text-align:justify left;
+	}
+.Cover img {
+	float:left;
+	padding:20px 50px 50px 20px;
+	}
+
+.Title {
+	text-align:center;
+	padding-left:60px;
+	padding-top:60px;
+	}
+.Title img {
+	padding-top:60px;
+	}
+
+.TCBPDF {
+	padding-top:80px;
+	padding-left:35px;
+	}
+
+
+
+.SIP {
+	padding:30px 50px 50px 50px;
+	text-align:justify left;
+	}
+.SIP img {
+	float:left;
+	padding:35px 50px 50px 20px;
+	}
+	
+.Logo {
+	text-align:center;
+	padding-left:60px;
+	padding-top:60px;
+	}
+.Logo img {
+	padding-top:60px;
+	}
+	
+.SIPPDF {
+	padding-top:60px;
+	padding-left:250px;
+	}
+	
+.Steve a {
+	text-decoration:none;
+	color:#FFF;
+	}
+.Steve a:hover {
+	color:#999;
+	}
+	
+	
+	
+.Animation {
+	margin:auto;
+	text-align:center;
+	padding:60px 50px 50px 180px;
+	}
+	
+.words {
+	text-align:center;
+	margin:auto;
+	padding:60px 55px 55px 180px;
+	}
+.google{
+	padding-left:130px;
+	}
+	
+	
+	
+.Front {
+	padding:30px 50px 50px 50px;
+	text-align:justify left;
+	}
+.Front img {
+	float:left;
+	padding:15px 50px 50px 20px;
+	}
+	
+.Layout {
+	text-align:center;
+	padding-left:60px;
+	padding-top:60px;
+	}
+.Layout img {
+	padding-top:60px;
+	}
+	
+.LAYOUTPDF {
+	padding-top:100px;
+	padding-left:40px;
+	}
+	
+.content {
+	width:500px;
+	margin:auto;
+	padding:80px 0px 0px 125px;
+	}

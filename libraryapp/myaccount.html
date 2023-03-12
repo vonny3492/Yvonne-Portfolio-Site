@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mobile.css" />
+		<script type="text/javascript" src="js/jquery.min.js"> </script>
+		<script type="text/javascript" src="js/script.js"> </script>
+	<!-- 	 I think I need these? -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.chained.min.js"></script>
+	<!--                           -->
+		<title>Twin Cities Library App</title>
+	</head>
+
+	<body>
+		<div id="ugh">
+		<div id="container"> 
+			
+			<a href="home.html"><div id="title">
+				<img src="images/logo.svg" width=100%> 
+			</div></a>
+			
+			<div id="main">
+				
+				<div class="buttons" id="checkedout"> 
+					<h2> CHECKED OUT </h2> 					
+				</div>
+					
+					<div class="dropdown2" id="checked"> 
+						<table style="width:900px">
+							<tr>
+  								<th>Renew Items?</th>
+  								<th>Image</th>
+  								<th>Information</th>
+  								<th>Checked out on</th>		
+  								<th>Due on</th>
+							</tr>
+							<tr>
+  								<td>
+  									<div class="squaredThree">
+									<input type="checkbox" value="None" id="squaredThree" name="check" />
+									<label for="squaredThree"></label>
+									</div>
+								</td>
+  								<td><img src="images/book.jpg" width=100%></td>		
+  								<td><p class="bold2">Harry Potter and the Chamber of Secrets
+  									</p>
+  									<p class="shift">JK Rowling</p>
+  									<p class="shift">Print Book</p>
+  								</td>
+  								<td>04/28/14</td>
+  								<td>05/12/14</td>
+  								
+							</tr>
+							<tr>
+  								<td>
+  									<div class="squared4">
+									<input type="checkbox" value="None" id="squared4" name="check" />
+									<label for="squared4"></label>
+									</div>
+								</td>
+  								<td><img src="images/OotP.jpg" width=100%></td>		
+  								<td><p class="bold2">Harry Potter and the Order of the Phoenix
+  									</p>
+  									<p class="shift">David Yates</p>
+  									<p class="shift">DVD</p>
+  								</td>
+  								<td>04/28/14</td>
+  								<td>05/05/14</td>	
+							</tr>
+						</table>	
+						<div class="go" id="renew"> <h2> renew checked items </h2> </div>
+					<div class="clear"></div>
+					</div>
+				
+				<div class="buttons" id="holds"> 
+					<h2> HOLDS </h2>
+				</div>
+					
+					<div class="dropdown2" id="hold"> 
+						<table style="width:900px">
+							<tr>
+  								<th>End hold?</th>
+  								<th>Info</th>
+  								<th>Placed on</th>
+  								<th>Place on list</th>
+  								<th>Status</th>		
+  								<th>Pick up at...</th>
+							</tr>
+							<tr>
+  								<td>
+  									<div class="squared5">
+									<input type="checkbox" value="None" id="squared5" name="check" />
+									<label for="squared5"></label>
+									</div>
+								</td>
+  								<td><p class="bold2">Harry Potter and the Chamber of Secrets
+  									</p>
+  									<p class="shift">JK Rowling</p>
+  									<p class="shift">Print Book</p></td>		
+  								<td> May 1st, 2014 </td>
+  								<td> 
+  								<p class="bold2">100</p>
+  								<p class="shift">of</p> 
+  								<p class="shift">150</p>
+  								<td>pending</td>
+  								<td>
+  									<div id="choose" class="options">
+										<select>
+											<option><p>Rondo</p></option>
+											<option><p>Arlington Hills</p></option>
+  											<option><p>Bookmobile</p></option>
+ 											<option><p>Central Library</p></option>
+  											<option><p>Dayton's Bluff</p></option>
+  											<option><p>Hamline Midway</p></option>
+  											<option><p>Hayden Heights</p></option>
+  											<option><p>Highland Park</p></option>
+  											<option><p>Merriam Park</p></option>
+  											<option><p>Rice Street</p></option>
+  											<option><p>Riverview</p></option>
+  											<option><p>Rondo</p></option>
+  											<option><p>St.Anthony Park</p></option>
+  											<option><p>Sun Ray</p></option>
+  											<option><p>West 7th</p></option>
+  											<option><p>Debra S. Fish - St.Paul</p></option>
+  											<option><p>Debra S. Fish - Minneapolis</p></option>
+										</select>
+									</div>
+								</td>
+  								
+							</tr>
+						</table>	
+						
+						<div class="go" id="renew"> <h2> cancel holds </h2> </div>
+					<div class="clear"></div>	
+					</div>
+				
+				<div class="buttons" id="lists"> 
+					<h2> LISTS </h2>
+				</div>
+				
+					<div class="dropdown2" id="list"> 
+						
+						<h5> My Lists of Books </h5>
+						
+						<div class="space" id="read">
+						<select>
+							<option value="sort by"><p>Books I've Read</p></option>
+							<option value="keyword"><p>Candide</p></option>
+  							<option value="title"><p>A Connecticut Yankee in King Arthur's Court</p></option>
+ 							<option value="author"><p>One for the Money</p></option>
+  							<option value="subject"><p>I've Got Your Number</p></option>
+  							<option value="series"><p>Howl's Moving Castle</p></option>
+						</select>
+						</div>
+						
+						<div class="space" id="want">
+						<select>
+							<option value="sort by"><p>Books I Want to Read</p></option>
+							<option value="keyword"><p>Deerskin</p></option>
+  							<option value="title"><p>Harry Potter and the Prisoner of Azkaban</p></option>
+ 							<option value="author"><p>Harry Potter and the Goblet of Fire</p></option>
+  							<option value="subject"><p>Harry Potter and the Order of the Phoenix</p></option>
+  							<option value="series"><p>Harry Potter and the Deathly Hallows</p></option>
+						</select>
+						</div>
+					
+					</div>
+				
+				<div class="buttons" id="currentread"> 
+					<h2> CURRENT READS </h2>
+				</div>
+					
+					<div class="dropdown2" id="current"> 
+						<h1>Harry Potter and the Sorcerer's Stone</h1>
+						<form class="comments" method="post">
+						<h5> How far are you in the book? </h5> 
+						<h6>use page numbers or percentages </h6>
+						<textarea name="comment" id="comment"/> </textarea>
+						</form>
+						
+						<h4> Rate the book! </h4>
+						<img src="images/stars2.png" width="95%"></img>
+						<div class="go" id="submit"> <h2> submit </h2> </div>
+						
+						<div class="clear"></div>
+					</div>
+					
+			
+			</div>
+			
+		</div>	
+		</div>
+
+	
+	<footer>
+		<p> partnered with </p>
+		<img src="images/goodreads.jpg" width="500px">
+	</footer>
+		</body>
+</html>

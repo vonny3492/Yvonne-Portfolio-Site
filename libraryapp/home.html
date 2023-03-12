@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/mobile.css" />
+		<script type="text/javascript" src="js/jquery.min.js"> </script>
+		<script type="text/javascript" src="js/script.js"> </script>
+	<!-- 	 I think I need these? -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.chained.min.js"></script>
+	<!--                           -->
+		<title>Twin Cities Library App</title>
+	</head>
+
+	<body>
+		<div id="ugh">
+		<div id="container"> 
+			
+			<a href="home.html"><div id="title">
+				<img src="images/logo.svg" width=100%> 
+			</div></a>
+				
+			<div id="searchbar">	
+				<div class="search">
+					<form class="search" method="get" action="results.html" >
+		 				<input type="text" name="searchbar" placeholder="what can we help you find?"/> 
+		 			</form>
+				</div>
+					
+				<div id="filters">
+					<div id="search">
+						<select>
+							<option value="sort by"><p>search by?</p></option>
+							<option value="keyword"><p>KEYWORD</p></option>
+  							<option value="title"><p>TITLE</p></option>
+ 							<option value="author"><p>AUTHOR</p></option>
+  							<option value="subject"><p>SUBJECT</p></option>
+  							<option value="series"><p>SERIES</p></option>
+  							<option value="call number"><p>CALL NUMBER</p></option>
+  							<option value="ISBN"><p>ISBN NUMBER</p></option>
+  							<option value="ISSN"><p>ISSN NUMBER</p></option>
+						</select>
+					</div>
+  
+					<a href="results.html"><div class="go"> <h1> GO </h1> </div></a>
+				</div>
+			</div>
+			
+			<div id="main">
+				
+				<a href="libraries.html"><div class="buttons" id="libraries"> 
+					<h2> LIBRARIES </h2> 					
+				</div></a>
+				
+				<a href="events.html"><div class="buttons" id="events"> 
+					<h2> EVENTS </h2>
+				</div></a>
+				
+				<a href="myaccount.html"><div class="buttons" id="account"> 
+					<h2> MY ACCOUNT </h2>
+				</div></a>
+			
+			</div>
+			
+		</div>	
+		</div>
+	<footer>
+		<p> partnered with </p>
+		<img src="images/goodreads.jpg" width="500px">
+	</footer>
+	
+	</body>
+</html>

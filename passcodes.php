@@ -1,0 +1,54 @@
+<?php
+	$passcodes = Array(
+		"C0ntra2t" => array(
+			"canAccess" => true,
+			"assignedTo" => "UWCredit",
+			"assignedDate" => "May20"
+		),
+		"S1m1lar1ty" => array(
+			"canAccess" => true,
+			"assignedTo" => "Sony",
+			"assignedDate" => "Mar29"
+		),
+		"C10sur3" => array(
+			"canAccess" => true,
+			"assignedTo" => "Zendesk",
+			"assignedDate" => "May8"
+		),
+		"Pr0x1m1ty" => array(
+			"canAccess" => true,
+			"assignedTo" => "Julia",
+			"assignedDate" => "Dec8"
+		),
+		"C0nt1nuat10n" => array(
+			"canAccess" => true,
+			"assignedTo" => "WPR",
+			"assignedDate" => "Jan10"
+		),
+		"B@k!ng" => array(
+			"canAccess" => true,
+			"assignedTo" => "Ho Chunk",
+			"assignedDate" => "Jan23"
+		),
+		"H3@lth" => array(
+			"canAccess" => true,
+			"assignedTo" => "Healthy Minds",
+			"assignedDate" => "Jul2"
+		),
+		"t3l3v!$!0n" => array(
+			"canAccess" => true,
+			"assignedTo" => "WPT",
+			"assignedDate" => "Apr1"
+		),
+		"cl0$!ng" => array(
+			"canAccess" => true,
+			"assignedTo" => "graaskamp",
+			"assignedDate" => "May20"
+		),
+		"R!dd!ku1us" => array(
+			"canAccess" => true,
+			"assignedTo" => "Yvonne"
+		)
+
+	);
+?>
