@@ -1,99 +1,180 @@
 /* general stylings */
+body {
+	margin:0;
+}
 
+:root {
+	--purple: #623647;
+	--orange: #F79120;
+	--red: #88002c;
+  }
 
 a {
 	text-decoration: none;
-	color: white;
+	border-bottom: dotted 2px var(--red);
+	color: var(--red);
 	font-family: 'Josefin Sans', sans-serif;
 	}
-
-	a:visited {
-		color: white;
-		}
 	
 	a:hover {
-		color: #623647;
-		font-weight: 700;
+		color: var(--purple);
+		border-bottom: solid 2px var(--purple);
 		}
 
 	a:active {
-		color: #F79120;
+		color: var(--orange);
+		border-bottom: solid 2px var(--purple);
 		}
 
 
 h1 {
-	line-height: 1.5em;
-	padding-bottom: 1em;
+	font-size: 3rem;
+	line-height: 3rem;
+	padding-bottom: 1rem;
+	margin-block-start: 0.25em;
 	}	
 
 h2 {
-	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 1.75rem;
+	line-height: 2rem;
 	font-weight: 600;
+	margin-block-end: .5em;
 	}
 	
 h3 {
-	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 	font-weight: 600;
+	margin-block-end: .5em;
 	}	
 
-	
-	
-dl {
-	padding: 0 20px 20px 20px;
+.list-header {
+	margin-block-end: 0;
+	font-weight: bold;
+}
+	ul {
+		padding-inline-start: 15px;
+		margin-block-start:0;
 	}
+	
+
 
 dt {
 	font-weight: 700;
-    line-height: 2em;
 	}
 	
 dd {
-	margin-bottom: 20px;
     margin: 0;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 1rem 0;
 	}
-			
-.writ {
+
+figure {
+	margin:0;
+}
+
+figcaption { margin: .5rem auto; font-size: .9rem; line-height: .9rem; opacity: .85; text-align:center;}
+
+.shadow {filter: drop-shadow(0px 1px 5px rgba(0,0,0,.25));}
+
+#results > div {
+	margin: 2rem auto;
+}
+
+/* Chunk Class so I can do easy grids */
+.chunk {
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    display: grid;
+    grid-gap: 1rem;
+}
+div.chunk {
+	margin: 1rem auto;
+}
+.half {
+	grid-gap: 2rem;
+}
+.chunk img {
+	width: 100%;
+}
+
+.card {
+	padding: 2rem;
+	margin: 0px;
+	background: #fff;
+	border-radius: 10px;
+	filter: drop-shadow(0px 0px 20px rgba(0,0,0,.25));
+}
+.card > div:first-child {
+    display: inline-grid;
+}
+
+.card > div > .button {
+    height: fit-content;
+    position: relative;
+    align-self: end;
+}
+
+section:has(.card) {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+
+.profile {
+	margin: -3rem 0 0;
+	margin-inline-start: 2rem;
+}
+
+.profile > img{
+	border-radius: 100%;
+}
+
+section {
 	font-family: 'Josefin Sans', sans serif;
-	line-height: 1.5em;
-	padding: 0 4% 0 4%;
-	margin-bottom: 2%;
+	line-height: 1.5rem;
+	padding: 2rem;
+	margin-top: 1rem;
 	} 
 
-	.writ img {
-	padding-top: 5%;
-	padding-bottom: 5%;
+	main#about > section span {
+		font-size: 3rem;
 	}
-	
-	.pic img {
-	margin: 0 0 0 0;
-	}
-	
-	.pic p, .pic h3{
-	font-family: 'Josefin Sans', sans serif;
-	line-height: 1.5em;
-	padding: 0 4% 0 4%;
-	margin-bottom: 2%;
-	}
+
+.red {background: var(--red);color: #fff;}
+
+aside.red {border-radius: 10px; padding: 1rem; }
+
+section.red {
+    margin-top: -4rem;
+}
+section.red > h2 {
+    margin-block-start: 4rem;
+}
+
+
+.feature img {
+	object-fit: cover;
+    width: 100%;
+    height: 400px;
+    object-position: left;
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,.25));
+}
 	
 
 /* link buttons */
 .button {
 	position: relative;
     	display: block;
-    	height: 45px;
    		width: 130px;
    		/* margin: auto;
      	margin-bottom: 40px; */
-    background: #F79120;
+    background: var(--orange);
     color: white;
     	text-align: center;
     	text-transform: uppercase;
-    	line-height: 49px;
    		letter-spacing: 1px;
+		padding: .75rem .25rem;
     border-radius: 5px;
+	border-bottom:none;
 }
 
 
@@ -115,61 +196,257 @@ dd {
 	padding-top: 2em;
 	padding-bottom: 1em;
 	}
-	
-#header {
-	display:flex;
-	align-items: center;
-	flex-wrap: wrap;
-	padding:1%;
-}
 
-.logo {
+#container {
+		max-width: inherit;
+		margin: auto;
+		padding: 2rem;
+		background-color: #fff;
+		}	
 	
-	}
-	
-/* Navigation Bar Style */
+/* Header ....................................... */	
 
-#nav {
-	margin-top: 0px;
-	margin-right:2px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #623647;
-	letter-spacing: 2px;
-	}
-	
-	ul {
-		margin:0;
-		padding:0;
+	/* Index Page Header (sort of) ....................................... */	
+		header div {
+			display:block;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding:2rem;
+			background: no-repeat left/cover url("../images/Web-Portfolio-Header-Background.png");
+			height: 100vh;
 		}
 
-		li {
-			list-style-type: none;
-			display: inline-block;
-			margin-top: 10px;
-			padding-left: 10px;
-			padding-right: 10px;
-			padding-bottom: 10px;
+		.logo {
+			width: 6rem;
+			fill: var(--purple);
 			}
-			
-#nav a {
-	text-decoration: none;
-	color: #623647;
-	font-family: 'Josefin Sans', sans-serif;
-	}
 
-	#nav a:visited {
-		color: #623647
+		header mark {
+			font-family: 'Cormorant Garamond', serif;
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 5rem 0 0;
+			color: #fff;
+			padding-bottom: 0px;
+			font-size: 4rem;
+			line-height: 1.5em;
 		}
+
+		span.r {
+			font-size: 7rem;
+			font-weight: 300;
+		}
+
+		/* Basic Nav styling */
+		nav {
+			display: grid;
+			gap: 1rem;
+		}
+
+		nav a {
+			color: var(--purple);
+			width: 95px;
+    		text-align: center;
+    		text-transform: uppercase;
+			border-bottom: none;
+		}
+
+		nav a:hover {
+			color: #99003b;
+    		font-weight: 500;
+    		background: #f791203d;
+    		border-radius: 35px;
+    		outline: 7px solid #f791203d;
+			border-bottom: none;
+		}
+
+		nav > a.button {
+    		font-weight: 500;
+			border-radius: 35px;
+			outline: none;
+		}
+
+		nav > a.button:hover {
+			background: #99003b;
+    		font-weight: 500;
+		}
+
+		nav > .button {padding: 0;}
+
+		header a {
+			border: none;
+		}
+
+	/* Most Pages Header (not shrunk) ..........................*/
+		header div {transition: padding .3s ease;}	
+
+		header.narrow {
+			width:100%;
+		}
+
+		header.narrow div {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 1rem;
+			justify-content: left;
+			padding: 2rem;
+			background: #ffeae1;
+			height: fit-content;
+			position:relative;
+			z-index: 2;
+		}
+
+		.narrow svg.logo {
+			width: 4rem;
+		}
+
+		header.narrow div mark {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			color: #fff;
+			padding-bottom: 0px;
+			font-size: 3rem;
+			flex-grow: 2;
+			gap: 5px;
+			font-weight: 700;
+		}
+
+		header.narrow span.r {
+			font-size: 4rem;
+			margin-top: 0;
+		}
+
+		header.narrow span.m {
+			margin-top: 0;
+			margin-inline-start: 0;
+		}
+
+		/* Nav styling on all other pages */
+		header.narrow div nav {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 3rem;
+		}
+
+		.narrow svg.curve {
+			z-index: 1;
+			margin-top: -20px;
+			width: 100%;
+			filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5))
+		}
+
 	
-	#nav a:hover {
-		color: #F79120;
-		font-weight: 500;
+
+	/* Shrink header on scroll............................ */
+		header.shrink div {
+			padding: .5rem 1rem;
 		}
 
-	#nav a:active {
-		color: #F79120;
-		}			
+		.shrink svg.curve {
+			margin-top: -42px;
+			position: absolute;
+		}
+
+	/* Stop sticking header on scroll ......................... */
+		header.stop {
+			position:relative;
+		}
+
+	/* Style the rainbow text element for my name */
+		.rainbow-text {
+			/* Create a conic gradient. */
+			/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+			background: var(--orange);
+			background-color: var(--orange);
+			background: conic-gradient(
+			#88002c 16.666%, 
+			#ff0039 16.666%, 
+			#f57c2e 33.333%, 
+			#f57c2e 33.333%, 
+			#F18F43 50%, 
+			#99003b 50%, 
+			#f79120 66.666%, 
+			#fb0030 66.666%, 
+			#99003b 83.333%, 
+			#f50028 83.333%);
+			
+			/* Set thee background size and repeat properties. */
+			background-size: 100%;
+			background-repeat: repeat;
+			
+			/* Use the text as a mask for the background. */
+			/* This will show the gradient as a text color rather than element bg. */
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			
+			/* Animate the text when loading the element. */
+			/* This animates it on page load and when hovering out. */
+			animation: rainbow-text-animation-rev 0.5s ease forwards;
+			cursor: pointer;
+		}
+
+		.narrow > .rainbow-text {
+			/* Create a conic gradient. */
+			/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+			background: var(--orange);
+			background-color: var(--orange);
+			background: conic-gradient(
+				at 70% 33%,
+			#88002c 16.666%, 
+			#ff0039 16.666%, 
+			#f57c2e 33.333%, 
+			#f57c2e 33.333%, 
+			#F18F43 50%, 
+			#99003b 50%, 
+			#f79120 66.666%, 
+			#fb0030 66.666%, 
+			#99003b 83.333%, 
+			#f50028 83.333%);
+		}
+		
+		/* Add animation on hover. */
+		.rainbow-text:hover {
+			animation: rainbow-text-animation 0.5s ease forwards;
+		}
+		
+		/* Move the background and make it larger. */
+		/* Animation shown when hovering over the text. */
+		@keyframes rainbow-text-animation {
+			0% {
+			background-size: 57%;
+			background-position: 0 0;
+			}
+			20% {
+			background-size: 57%;
+			background-position: 0 1em;
+			}
+			100% {
+			background-size: 300%;
+			background-position: -9em 1em;
+			}
+		}
+		
+		/* Move the background and make it smaller. */
+		/* Animation shown when entering the page and after the hover animation. */
+		@keyframes rainbow-text-animation-rev {
+			0% {
+			background-size: 300%;
+			background-position: -9em 1em;
+			}
+			20% {
+			background-size: 57%;
+			background-position: 0 1em;
+			}
+			100% {
+			background-size: 57%;
+			background-position: 0 0;
+			}
+		}
+
 
 
 .selected p{
@@ -178,21 +455,8 @@ dd {
 
 
 
-/* portfolio */
+/* portfolio */	
 
-#container {
-	max-width: inherit;
-	margin: auto;
-	padding: 3%;
-	padding-top: 1%;
-	}	
-	
-.indent {
-	margin-left: 5%;
-	margin-right: 8%;
-	text-align: justify;
-	line-height: 1.25em;
-	}
 
 .protect p {
 font-size: 1.2em;
@@ -200,10 +464,10 @@ line-height: 2em;
 }
 
 .smallcaption {
-	opacity: .5;
+	opacity: .75;
 	text-align: left;
     padding-left: 0;
-    font-size: 1em !important;
+    font-size: .75rem;
     line-height: 1.5em !important;
 	}
 
@@ -218,7 +482,7 @@ line-height: 2em;
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -237,9 +501,10 @@ line-height: 2em;
   left:0;
   right:0;
   bottom: 0;
-  max-height:100%;
-  max-width: 100%;
-  padding: 4% 2% 2% 2%;
+  max-height:90%;
+  max-width: 90%;
+  width: auto;
+  padding: 1rem;
 }
 
 .modal p {
@@ -247,10 +512,9 @@ line-height: 2em;
 	font-family: 'Josefin Sans', sans-serif;
 	position: absolute;
     top: 0;
-    left: 2%;
-    right: 10%;
-    padding: 10px;
-    background-color: rgba(0,0,0, .4);
+    left: 2rem;
+    right: 2rem;
+	max-width: 75%;
 	}
 	
 
@@ -263,12 +527,19 @@ line-height: 2em;
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 5px;
-  z-index:5
+  z-index:5;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align:center;
+  transition: 0.6s ease;
   }
 
 .close:hover,
 .close:focus {
-  color: #F79120;
+  background: var(--orange);
+  color:var(--purple);
+  border-radius: 100%;
   text-decoration: none;
   cursor: pointer;
 }
@@ -298,6 +569,7 @@ line-height: 2em;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  border-bottom:0;
 }
 
 /* Position the "next button" to the right */
@@ -309,12 +581,7 @@ line-height: 2em;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #F79120;
-}
-
-img {
-  margin-bottom: -4px;
+  background-color: var(--orange);
 }
 
 .desc {
@@ -324,40 +591,6 @@ img {
     padding: 1%;
     color: white;
     font-family: sans-serif;
-}
-
-
-/* gallery */
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.responsive {
-    padding: 6px;
-    float: left;
-    width: 19.99999%;
-}
-
-@media only screen and (max-width: 950px){
-    .responsive {
-        width: 32.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
 }
 
 .active,
@@ -374,96 +607,67 @@ img.hover-shadow {
   -webkit-transform: scale(1.01);
 }
 
-
-/* home page images */
-    .bw {
-    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-      filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .2s ease-in-out;  
-    }
-
-    .bw:hover {
-    filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
-    }
-
-/* home page */
-.quad {
-    padding: .5%;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 800px){
-    .quad {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .quad {
-        width: 100%;
-    }
-}
-
 /* footer */
 
-#footer {
-	background: #623647;
+footer {
 	color: white;
-	font-family: 'Josefin Sans', sans serif;
-	line-height: 1.5em;
-	}
-	
-	#info {
-	padding-left: 20px;
-	padding-right: 30px;
-	}
-	
-		#funfact {
-			font-weight: 700;
-			text-transform: uppercase;
-			}
-		
-	#icons {
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 1%;
-	text-align: center;
-	}
-	
-		#column1 {
-	width: 15%;
-	float: left;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 2%;
+    font-family: 'Josefin Sans', sans serif;
+    line-height: 1.5em;
+    background: linear-gradient(-45deg, #502836, #ab2a22, #e53c25, #f36f2b, #9c1e1e, #fb9b34);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
 	}
 
-		#column2 {
-	width: 75%;
-	float: left;
-	padding-top: 0px;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-left: 3%;
-	}
-		
-			#icons img {
-	padding-top: 2%;
-	max-width: 60px;
-	min-width: 40px;
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 
-.caption {
-	opacity: .5;
-	text-align: center;
-	padding-left: 2%;
-	padding-right: 2%;
-	margin: 0px;
+	footer > section {
+		display: flex;
+		flex-flow: wrap row;
+		padding: 2rem;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	footer svg.logo {
+		fill: #fff;width: 70px;filter: drop-shadow(0px 0px 6px rgba(0,0,0,.35));
+	}
+
+	#info div:first-child {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.caption {
+		opacity: .7;
+	}
+	
+	#icons ul {
+		display: flex; 
+		flex-direction: column;
+		padding:0;
+	}
+
+	#icons li {
+		list-style: none;
+	}
+
+	#icons img {
+		max-width: 60px;
+		min-width: 40px;
+	}
+
+	#icons a {
+		border: none;
 	}
 	
 	
@@ -483,3 +687,140 @@ img.hover-shadow {
     font-size: 17px;
 }
 
+
+/* Media Queries mostly so my name does't look stupid */	
+@media (min-width: 900px) {
+	#container, main {
+		margin: 3rem auto auto;
+	}
+
+	.logo {width: 8rem;}
+
+	header div mark {
+		margin: 6rem 0 0;
+		font-size: 5rem;
+		max-width: 50%;
+	}
+
+	header.narrow div mark {
+		max-width: 100%;
+	}
+
+	span.r {font-size: 10rem;}
+
+	.narrow svg.curve {
+		margin-top: -30px;
+		position: absolute;
+		filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+	}
+
+	header.narrow {
+		position: sticky;
+		z-index: 3;
+		width:100%;
+		top: 0;
+	}
+
+	section {
+		margin-top:4rem;
+		padding: 2rem 4rem;
+	}
+
+	section.red {
+		padding: 6rem 4rem 2rem;
+	}
+
+	section#results {
+		padding-top:0;
+	}
+
+	#about > section {
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	.chunk > .column-span {
+		grid-column: span 2;
+		margin-top: -4rem;
+	}
+
+	.card {
+		padding: 2rem 0 2rem 2rem;
+	}
+}
+
+
+@media (min-width: 900px) and (max-width: 1162px) {
+	span.r {margin-top: 42px}
+	span.m {margin-top:-75px; margin-inline-start: 10px;}
+}
+
+@media (min-width: 326px) and (max-width: 492px) {
+	span.r {margin-top: 37px}
+	span.m {margin-top: -61px; margin-inline-start: 10px;}
+}
+
+@media (min-width: 252px) and (max-width: 388px) {
+	header.narrow div mark > span.m {margin-top: -45px; margin-inline-start: 6px;}
+	header.narrow div mark > span.r {margin-top: 20px}
+}
+
+@media (max-width: 900px) {
+	section.red {
+		margin-top: -2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	section.red {
+		margin-top: -1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	#container {
+		padding: 1rem;
+	}
+
+	#info div:first-child
+	{
+		display: block;
+	}
+
+	#icons {
+		width: 100%;
+	}
+
+	#icons ul {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header.narrow div nav {
+		display: grid;
+		text-align: left;
+		gap: 0;
+	}
+
+	header.narrow div nav a {
+		text-align: left;
+	}
+
+	.narrow svg.curve {
+		margin-top: -10px;
+	}
+
+	.profile {
+		margin-top: -4rem;
+		margin-inline-start: 0; 
+		padding: 1rem;
+	}
+
+	section {
+		padding: 2rem;
+		} 
+
+	.card {
+		padding: 1rem;
+		}
+}

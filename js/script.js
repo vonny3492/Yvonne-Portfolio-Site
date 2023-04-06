@@ -11,7 +11,32 @@ function launchAuth() {
 function deleteCookie(name){
 	document.cookie = name + "=; expires= Thu, 01 Jan 1970 00:00:01 GMT";
 	}
-	
+
+// apply different header layout on homepage  
+  $(function() {
+    var loc = window.location.href; // returns the full URL
+    if(/index/.test(loc)) {
+      $('header').removeClass('narrow');
+      $('nav a').addClass('button')
+    }
+  });
+
+// shrink header on scroll
+var className = "shrink";
+var scrollTrigger = 60;
+
+window.onscroll = function() {
+  // We add pageYOffset for compatibility with IE.
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].classList.add(className);
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove(className);
+  }
+};
+
+
+
+
 //copy to clipboard for email	
 function copyToClipboard(element) {
   var $temp = $("<input>");

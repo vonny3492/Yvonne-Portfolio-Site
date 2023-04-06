@@ -40,18 +40,7 @@
 
 
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/yew.css" />
-		<link rel="stylesheet" href="css/grid.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="images/favicon.png" href="favicon.ico" />
-		<script type="text/javascript" src="js/jquery.min.js"> </script>
-		<script type="text/javascript" src="js/script.js"> </script>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700, 600italic' rel='stylesheet' type='text/css'>
-		
-		<title>Yew: Yvonne R Muller</title>
-	</head>
+	<?php include 'head.php';?>
 	
 	<body>
 	
@@ -62,43 +51,60 @@
 	
 	<?php include 'header.php';?>
 		
-		<div id="container">
-			
-			
-			<div class="group">
+		<main>
+			<section class="chunk half">
 				
-				<div class="col span_1_of_2">
-					<div class="writ">
-						<h1> Crowned </h1>
-						<h3> The Succession of the British Monarchy </h3>
-						<p> My final task at the University of Minnesota was to complete a thesis project on a subject of my choice. I choose to try and explain the succession patterns of the British Monarchy. I minored in history, and studied abroad in Scotland, where I studied Scottish and Celtic history. While I was there I tried to understand how the monarchs I was learning about in class were related to each other, and discovered it was a challenge to find comprehensive information. I wanted create a website that would allow people with similar interests as me learn more about these monarchs.</p>
-
-						<p>The thesis program is divided into two parts: writing and exhibition. During the first semester, I spent time reading books and using online family trees to understand how the succession worked. I also endeavored to learn more about the women that are forgotten in the passing of time. Women who had an important impact on the path of the monarchy. The culmination of this research was a paper, or more accurately two papers, that I transformed into a book. This transformation allowed for me to begin thinking about my design decisions that would eventually be applied to my final project.</p>
-
-						<p>The second semester was spent creating a thesis project which used this research as a base. While my project veered away from a strictly female filter, the information learned during the writing semester did not go to waste. A combination of image creation and html/css/jquery coding created this site. Using the design skills that I'd spent the previous four years learning, I attempted to create a site which organizes these historical figures into an easily understandable website. I used color to unify countries, dynasties, and family succession. I also made sure to include information about my design decisions, and my learning process on the help page of the website. I recommend going there to learn more. I created a site that allows you to trace lineages across dynasties, to understand the relationships that allowed for succession, and gives concise information about each monarch.</p>
-
-						<p>This long term project may be a work in progress but something I'm incredibly proud of. Thank you for taking a look.
-</p>
-
-
-						<p class="link">Click below for a look at the complete site, or see a copy of the thesis book.</p>
-							<a class="button" style="margin: auto; margin-bottom: 30px;" href="http://yvonnermuller.com/crowned/index.html">the Site</a>
-							<a class="button" style="margin: auto; margin-bottom: 30px;" href="http://yvonnermuller.com/images/uncrowned.pdf">the Book</a>					
+				<div>
+					<h1>Crowned</h1>
+					<h2>The Succession of the British Monarchy</h2>
+					<p>This is my college thesis project. I minored in history, and studied abroad in Scotland, where I studied Scottish and Celtic history. While I was there I tried to understand how the monarchs I was learning about in class were related to each other, and discovered it was a challenge to find comprehensive information. I wanted create a website that would allow people with similar interests as me learn more about these monarchs.</p>
+				</div>		
 					
-					</div>
+				<figure>
+					<img src="images/crowned_1.svg" width="100%"/>
+				</figure>
+			</section>	
+
+			<svg class="curve" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+				<path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
+			</svg>
+			<section id="design" class="red chunk half">
+				<div>
+					<h3>Research</h3>
+					<p>Reading lots of books</p>
+					<p>Post-it note hierarchy outline</p>
+					<p>Timeline/Family tree competitor analysis</p>
 				</div>
+
+				<div>
+					<h3>Key Features</h3>
+					<p>cohesive overall design style</p>
+					<p>color to unify countries, dynasties, and family succession</p>
+					<p>arrows to identify succesion path</p>
+					<p>legend to explain design decisions</p>
+				</div>
+			</section>
+			<svg class="curve" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="var(--red)" xmlns="http://www.w3.org/2000/svg">
+				<path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
+			</svg>
 			
-				<div class="col span_1_of_2">
-					<div class="pic">
-						<img src="images/crowned_1.svg" width="100%"/>
-						<img src="images/crowned_2.svg" width="100%"/>
-					</div>
-				</div>
+			<section style="text-align:center">
+				<p>I created a site that allows you to trace lineages across dynasties, to understand the relationships that allowed for succession, and gives concise information about each monarch.</p>
+				<p><strong>This long term project may be a work in progress but something I'm incredibly proud of. Thank you for taking a look.</strong></p>
+
+
+				<figure>
+					<img src="images/crowned_2.svg" width="100%"/>
+				</figure>
+
+				<p class="link">Click below for a look at the complete site, or see a copy of the thesis book.</p>
+					<a class="button" style="margin: auto; margin-bottom: 30px;" href="crowned/index.html">the Site</a>
+					<a class="button" style="margin: auto; margin-bottom: 30px;" href="images/uncrowned.pdf">the Book</a>		
 				
-			</div>	
+			</section>	
 			
 			
-		</div>	
+		</main>	
 		
 		
 	<?php include 'footer.php';?>

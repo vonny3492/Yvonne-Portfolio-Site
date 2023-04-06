@@ -40,123 +40,132 @@
 
 
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/yew.css" />
-		<link rel="stylesheet" href="css/grid.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="images/favicon.png" href="favicon.ico" />
-		<script type="text/javascript" src="js/jquery.min.js"> </script>
-		<script type="text/javascript" src="js/script.js"> </script>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700, 600italic' rel='stylesheet' type='text/css'>
-		
-		<title>Yew: Yvonne R Muller</title>
-	</head>
+	<?php include 'head.php';?>
 	
 	<body>
 	
-	
-	
-	<?php include 'header.php';?>
+		<?php include 'header.php';?>
+			
+		<?php
+		if($fullAccessEnabled) { echo ""; }
+		else { echo ""; }
+		?>
 		
-	<?php
-	if($fullAccessEnabled) { echo ""; }
-	else { echo ""; }
-	?>
-		
-		<div id="container">
-			
-			
-			<div class="group">
+		<main>
 				
-				<div class="col span_1_of_2">
-					<div class="writ">
-						<h1> Express Dispo </h1>
-						<h3> Speeding up a speedy process </h3>
-						<p> Emergency care needs to be quick. Whether the patient is in dire and pressing need for care, or if they have a smaller issue, the faster a patient can be taken care of and out of the Emergency Department the better for everyone. Decreasing the time it takes for patients to be processed and moved on, either out of the hospital or to another department, makes for better outcomes for them.</p>
-						<p> At Epic the disposition and discharge process has already been condensed and centralized to a single page, but there were ways to speed that up, and improve patient outcomes. I wanted to take what was a simple chunking of information, and turn it into a smart chunking of information. I pulled relevant pieces together and reorganized the layout to put prominent pieces on the top, and gave a typographic hierarchy to the cards. The result was a new way to view a patient's final care assessment that didn't change what physicians were comfortable with.</p>		
-					
-					</div>
+			<section class="chunk half">
+				
+				<div>
+					<h1>Express Dispo</h1>
+					<h3>Speeding up a speedy Epic systems process</h3>
+					<p>Emergency care needs to be quick. Decreasing the time it takes for patients to be processed and moved on, either out of the hospital or to another department, makes for better outcomes for them. The goal of this project was to take an already consolidated process and incorporate hierarchy and smart groupings to improve effeciency, clinician workflow, and quality of patient care.</p>
+					<p class="list-header">Issues</p>	
+					<ul>
+						<li>patient issues take the same amount of time regardless of simplicity of treatment or severity</li>
+						<li>limited information hierarchy</li>
+						<li>progress is unclear</li>
+					</ul>
 				</div>
 			
-				<div class="col span_1_of_2">
-					<div class="pic">
-						<img src="images/dispo_notes.png" width="100%"/>
-					</div>
-				</div>
-				
-			</div>	
-			
-			
-			<div class="group">
-				
-				<div class="col span_1_of_2">
-					<div class="pic, writ">
-						<img src="images/dispo_wireframes.png" width="100%"/>
-						<p> We ended up with two paths forward. One was more inline with the past versions of the disposition activity. We planned to streamline the content in all the cards and incorporate some valuable typographic hierarchy. The other was a larger alteration, moving some content out the cards and into top and bottom sections that are visible at all times in the activity. These spaces would have content that aided in finishing a patient's care and tracking the user's progress through patient documentation.</p>
-						<p>After meeting with our physician and product lead we decided to try both and usability test them at our big user exhibition.</p>
-					</div>
-					
-				</div>
-			
-				<div class="col span_1_of_2">
-					<div class="writ">
-						<h3> Wire-framing </h3>
-						<p> After several meetings discussing the goals of the project it was time to start ideating, and then wire-framing, to show to our physicians and product lead the direction we were hoping to take the project. </p>	
-						
-						<img src="images/dispo_wireframe1.svg" width="100%"/>
+				<aside>
+					<figure class="feature">
 						<img src="images/dispo_wireframe2.svg" width="100%"/>
+					</figure>
+				</aside>
+				
+			</section>	
+			
+			<svg class="curve" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+				<path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
+			</svg>
+			<section id="design" class="red">
+				<h2>Design Process</h2>
+				<div class="chunk">
+					
+					<div id="research">
+						<h3>Scope Research</h3>
+						<p>Meeting with stakeholders</p>
+						<p>Immersion with clincians</p>
 					</div>
+
+					<div id="usability">
+						<h3>Usability Testing</h3>
+						<p>Task based usability testing</p>
+						<p>Compare current to proposed mockup prototypes</p>
+						<p>Hundreds of real user participants</p>
+					</div>
+
+					<figure class="column-span">
+						<img src="images/dispo_notes.png" style="border-radius:100%;" width="100%"/>
+					</figure>
 				</div>
 				
-			</div>	
-			
-			<div class ="group, pic, writ">
-			
-			<h3> Key changes for Express Dispo</h3>
-				<img src="images/Ready_to_go.png" width="100%" style="padding-bottom: 1%; padding-top: 1%; box-shadow: 1px 1px 10px rgba(0, 0, 0, .25);"/>
-				<p> For the major alteration version of Dispo, the bottom bar of the screen allows for physicians to quickly share their documentation, as well as mark the patient as ready to leave the hospital. These steps set in motion the steps to help the patient get out of the hospital as quickly as possible. </p>
-				
-				<img src="images/ChartStatus.svg" width="100%" style="padding-bottom: 1%; padding-top: 1%;"/>
-				<p style="padding-bottom: 5%;"> We also altered Chart Status. Chart Status allows for physicians to see quickly what's left to accomplish to help get the patient quickly through the process. In the original version it was chunked in a card and forced to fit in a way that didn't best suit the information. When given the entire width of the screen, chart status is easy to parse, and visual weight is given to the items that need addressing. Hover bubbles (visible below) allow users to act on unfinished items. </p> 
-			</div>
-			
-			<div class="group">
-			
-				<div class="col span_1_of_3">
-					<div class="pic">
+				<div id="wireframing" class="chunk">
+					<div >
+						<h3>Wireframing</h3>
+						<p>Slight variation in current process</p>
+						<p>Large variation in current process</p>
+						<figure>
+							<img src="images/dispo_wireframes.png" width="100%"/>
+							<figcaption>Initial sketches</figcaption>
+						</figure>
+					</div>
+					
+					<div>
+						<figure>
+							<img src="images/dispo_wireframe1.svg" width="100%"/>
+							<figcaption>High fidelity mockup of simple variation for testing</figcaption>
+						</figure>
+
+						<figure>
+							<img src="images/dispo_wireframe2.svg" width="100%"/>
+							<figcaption>High fidelity mockup of major variation for testing</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<svg class="curve" preserveAspectRatio="none" viewBox="0 0 1440 96" fill="var(--red)" xmlns="http://www.w3.org/2000/svg">
+				<path d="m0 96 80-5.3C160 85 320 75 480 64s320-21 480-21.3c160 .3 320 10.3 400 16l80 5.3V0H0v96Z"></path>
+			</svg>
+
+			<section id="results">
+				<h2>Results</h2>
+				<h3>Key Features</h3>
+				<div>
+					<img class="shadow" src="images/ChartStatus.svg" width="100%"/>
+					<p>Chart Status allows for clinicians to see progress of their patient's process. When given the entire width of the screen, chart status is easy to parse, and visual weight is given to the items that need addressing.</p> 
+				</div>
+
+				<div class="chunk">
+					<div class="column-span" style="margin-top:0;">
 						<img src="images/SmartSets.svg" width="100%"/>
-						<p> As part of the accelerated process of discharging a patient, we provided system generated auto fills as well as the structure to have organizations create their own "Smart Sets" to auto fill documentation. The software automatically presents the most likely Smart Sets based on the already filled out patient documentation.</p>
-						<p> Smart Sets pull in standard discrete documentation but also can pull in prose like notation. If the doctor has a certain style of documentation Epic can pull that into the dispo as well. I tried to create styles that will work well on the digital screen but also translate well to black and white printers.</p>
+						<p>"Smart Sets" allow organizations to pre-create the proper documenation and orders for patients based on symptoms</p>
+						<p>Integrating "Smart Sets" via an "Express Lane" feature allows for more efficient patient processing through the Emergency department by suggesting relevant "Smart Sets" to the clinician</p>
+						<p>Hover bubbles allow secondary information to be reviewed quickly and marked as such to reach patient safety regulations</p> 
 						
-						<p> Lastly the hover bubbles that allow users to quickly gather what information they are missing and what needs to be reviewed. We wanted this to be a usable hover bubble, not just informational. The button in the hover allows users to quickly review pertinent information and mark it as reviewed to meet important patient safety regulations.</p> 
-					</div>	
-				</div>
-			
-				<div class="col span_1_of_3">
-					<div class="pic">
-						<img src="images/Note.svg" width="100%"/>
+						<figure class="chunk">
+							<img src="images/Workup_hover.svg" width="100%"/>
+							<img src="images/Triage_hover.svg" width="100%"/>
+						</figure>
 					</div>
-				</div>
 				
-				<div class="col span_1_of_3">
-					<div class="pic">
-						<img src="images/Workup_hover.svg" width="100%"/>
-						<img src="images/Triage_hover.svg" width="100%"/>
-					</div>
-				</div>
+					<figure>
+						<img class="shadow" src="images/Note.svg" width="100%"/>
+					</figure>
+
+				</div>				
 				
-			</div>
-		
-			<div class="group, pic">
-				<h3> Usability Testing </h3>
-				<p> For usability testing we compared what was currently being used in Epic's software to the mockup I created below. We did task based testing where hundreds of users were able to "dispo" a patient from the emergency room, each user having the same tasks but were randomly given a different Dispo activity, the current Epic version and the idealized mockup. </p>
-				<img src="images/Dispo_final.png" width="100%"/>
-			</div>
-			
-		</div>	
-		
-		
+				<div>
+					<img class="shadow" src="images/Ready_to_go.png" width="100%"/>
+					<p>The bottom bar of the screen allows for clinicians to quickly share their documentation and mark the patient as ready to leave the hospital.</p>
+				</div>
+
+			</section>
+
+			<img src="images/Dispo_final.png" width="100%"/>
+
+		</main>
+
 	<?php include 'footer.php';?>
 	
 	</body>

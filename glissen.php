@@ -40,18 +40,7 @@
 
 
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/yew.css" />
-		<link rel="stylesheet" href="css/grid.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="images/favicon.png" href="favicon.ico" />
-		<script type="text/javascript" src="js/jquery.min.js"> </script>
-		<script type="text/javascript" src="js/script.js"> </script>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700, 600italic' rel='stylesheet' type='text/css'>
-		
-		<title>Yew: Yvonne R Muller</title>
-	</head>
+	<?php include 'head.php';?>
 	
 	<body>
 	
