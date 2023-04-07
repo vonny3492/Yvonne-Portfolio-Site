@@ -31,20 +31,10 @@
 			"assignedTo" => "Activision",
 			"assignedDate" => "Apr7"
 		),
-		"B@k!ng" => array(
+		"L@nd$c@p3" => array(
 			"canAccess" => true,
-			"assignedTo" => "Ho Chunk",
-			"assignedDate" => "Jan23"
-		),
-		"H3@lth" => array(
-			"canAccess" => true,
-			"assignedTo" => "Healthy Minds",
-			"assignedDate" => "Jul2"
-		),
-		"t3l3v!$!0n" => array(
-			"canAccess" => true,
-			"assignedTo" => "WPT",
-			"assignedDate" => "Apr1"
+			"assignedTo" => "Truehold",
+			"assignedDate" => "Apr7"
 		),
 		"R!dd!ku1us" => array(
 			"canAccess" => true,
