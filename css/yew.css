@@ -32,6 +32,7 @@ h1 {
 	line-height: 3rem;
 	padding-bottom: 1rem;
 	margin-block-start: 0.25em;
+	text-transform: capitalize;
 	}	
 
 h2 {
@@ -39,6 +40,7 @@ h2 {
 	line-height: 2rem;
 	font-weight: 600;
 	margin-block-end: .5em;
+	text-transform: capitalize;
 	}
 	
 h3 {
@@ -46,6 +48,7 @@ h3 {
 	line-height: 1.75rem;
 	font-weight: 600;
 	margin-block-end: .5em;
+	text-transform: capitalize;
 	}	
 
 .list-header {

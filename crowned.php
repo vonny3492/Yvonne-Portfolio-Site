@@ -57,7 +57,7 @@
 				<div>
 					<h1>Crowned</h1>
 					<h2>The Succession of the British Monarchy</h2>
-					<p>This is my college thesis project. I minored in history, and studied abroad in Scotland, where I studied Scottish and Celtic history. While I was there I tried to understand how the monarchs I was learning about in class were related to each other, and discovered it was a challenge to find comprehensive information. I wanted create a website that would allow people with similar interests as me learn more about these monarchs.</p>
+					<p>This is my college thesis project. I minored in history, and studied abroad in Scotland, where I studied Scottish and Celtic history. When I was there, I wanted to know how the monarchs I learned about were related to each other. But I found it difficult to find all the information I needed. I wanted to create a website that would allow people with similar interests as me learn more about these monarchs.</p>
 				</div>		
 					
 				<figure>
