@@ -118,18 +118,20 @@
 				
 					<div class="chunk card">
 						<div class="protect">
-							<h2> Timeline </h2>
-							<h3> A lifetime view</h3>
-							<p>  The patient's medical history displayed in a comprehensive, chronological, and interactive web software program. A long term group project, establishing innovative ways to make medical decisions.</p>
-
+							<div>
+								<h2> Timeline </h2>
+								<h3> A lifetime view</h3>
+								<p>  The patient's medical history displayed in a comprehensive, chronological, and interactive web software program. A long term group project, establishing innovative ways to make medical decisions.</p>
+							</div>
 							<a class="button" href="timeline.php">More Info</a>
 
 						</div>
 					
 						<figure class="protect">
 							<img src="images/timeline_context.png" width=100%/>
-						</div>
+						</figure>
 					</div>
+
 				</section>
 			
 				<?php } else { ?>
@@ -158,26 +160,24 @@
 			<!--Social Care's Client Plan-->	
 				<?php
 				if($fullAccessEnabled) { ?>
-				<div id="social" class="section group">
+				<section id="social">
 				
-					<div class="col span_1_of_2">
-						<div class="writ protect">
-							<h2> Client Plan</h2>
-							<h3> Social Care for the future</h3>
-							<p> Designed for the future of the US medical industry, when social environments are regarded as a an important determinant of a patient's health. Incorporating aspects of international social care.</p>
-								
-							<a class="button" href="social.php">More Info</a>
-							
+					<div class="chunk card">
+						<div class="protect">
+							<div>
+								<h2> Client Plan</h2>
+								<h3> Social Care for the future</h3>
+								<p> Designed for the future of the US medical industry, when social environments are regarded as a an important determinant of a patient's health. Incorporating aspects of international social care.</p>
+							</div>	
+							<a class="button" href="social.php">More Info</a>	
 						</div>
-					</div>
 
-					<div class="col span_1_of_2">
-						<div class="pic protect">
-							<img src="images/clientplan_context.png" class="border" width=100%/>
-						</div>
+						<figure class="protect">
+							<img src="images/clientplan_context.png" width=100%/>
+						</figure>
 					</div>
 			
-				</div>
+				</section>
 			
 				<?php } else { ?>
 				
@@ -204,25 +204,24 @@
 			<!--Express Dispo-->	
 				<?php
 				if($fullAccessEnabled) { ?>
-				<div id="express" class="section group">
+				<section id="express">
 				
-					<div class="col span_1_of_2">
-						<div class="writ protect">
-							<h2> Express Dispo </h2>
-							<h3> Speeding up the emergency department</h3>
-							<p> A software redesign to benefit physician efficiency. Condensing a complicated process to its essentials and removing distractions to keep patient's safety a priority.</p>
-							
+					<div class="chunk card">
+						<div class="protect">
+							<div>
+								<h2>Express Dispo </h2>
+								<h3>Speeding up the emergency department</h3>
+								<p>A software redesign to benefit physician efficiency. Condensing a complicated process to its essentials and removing distractions to keep patient's safety a priority.</p>
+							</div>	
 							<a class="button" href="express.php">More Info</a>
 						</div>
-					</div>
 					
-					<div class="col span_1_of_2">
-						<div class="pic protect">
-							<img src="images/express_context.png" class="border" width=100%/>
-						</div>
+						<figure class="protect">
+								<img src="images/express_context.png" class="border" width=100%/>
+						</figure>
 					</div>
 				
-				</div>
+				</section>
 
 				<?php } else { ?>
 				
