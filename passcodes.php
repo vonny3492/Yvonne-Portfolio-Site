@@ -8,8 +8,8 @@
 		),
 		"S1m1lar1ty" => array(
 			"canAccess" => true,
-			"assignedTo" => "Sony",
-			"assignedDate" => "Mar29"
+			"assignedTo" => "ExactScience",
+			"assignedDate" => "Apr7"
 		),
 		"C10sur3" => array(
 			"canAccess" => true,
