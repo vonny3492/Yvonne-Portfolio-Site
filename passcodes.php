@@ -31,7 +31,7 @@
 			"assignedTo" => "Activision",
 			"assignedDate" => "Apr7"
 		),
-		"L@nd$c@p3" => array(
+		"L@ndsc@p3" => array(
 			"canAccess" => true,
 			"assignedTo" => "Truehold",
 			"assignedDate" => "Apr7"
