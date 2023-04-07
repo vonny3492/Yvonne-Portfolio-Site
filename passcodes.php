@@ -23,8 +23,8 @@
 		),
 		"C0nt1nuat10n" => array(
 			"canAccess" => true,
-			"assignedTo" => "WPR",
-			"assignedDate" => "Jan10"
+			"assignedTo" => "MOXE",
+			"assignedDate" => "Apr7"
 		),
 		"B@k!ng" => array(
 			"canAccess" => true,
