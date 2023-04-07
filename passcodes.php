@@ -26,6 +26,11 @@
 			"assignedTo" => "MOXE",
 			"assignedDate" => "Apr7"
 		),
+		"cl0$!ng" => array(
+			"canAccess" => true,
+			"assignedTo" => "Activision",
+			"assignedDate" => "Apr7"
+		),
 		"B@k!ng" => array(
 			"canAccess" => true,
 			"assignedTo" => "Ho Chunk",
@@ -40,11 +45,6 @@
 			"canAccess" => true,
 			"assignedTo" => "WPT",
 			"assignedDate" => "Apr1"
-		),
-		"cl0$!ng" => array(
-			"canAccess" => true,
-			"assignedTo" => "graaskamp",
-			"assignedDate" => "May20"
 		),
 		"R!dd!ku1us" => array(
 			"canAccess" => true,
