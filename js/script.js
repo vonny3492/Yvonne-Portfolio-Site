@@ -15,7 +15,7 @@ function deleteCookie(name){
 // apply different header layout on homepage  
   $(function() {
     var loc = window.location.href; // returns the full URL
-    if(/index/.test(loc)) {
+    if(window.location.pathname == '/') {
       $('header').removeClass('narrow');
       $('nav a').addClass('button')
     }
@@ -34,25 +34,6 @@ window.onscroll = function() {
   }
 };
 
-
-
-
-//copy to clipboard for email	
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-  alert("Copied the text: " + copyText.value);
-}
-
-//toast
-function myFunction() {
-    var x = document.getElementById("snackbar")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
 
 //lightbox
 function openModal() {
