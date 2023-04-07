@@ -11,7 +11,7 @@
 		<main id="about" class="chunk half">
 				<h1 style="position: absolute; left: -20000px;">About Me</h1>
 				<figure class="profile">
-					<img src="images/profile-pic.png" title="Thank you for your time!"/>
+					<img src="images/Profile-Pic.png" title="Thank you for your time!"/>
 				</figure>
 			
 			
