@@ -1,6 +1,6 @@
-<head>
+	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/yew.css" />
+		<link rel="stylesheet" href="css/yew.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="images/favicon.png" href="favicon.ico" />
 		<script type="text/javascript" src="js/jquery.min.js"></script>

@@ -55,9 +55,9 @@
 					<div class="chunk card">
 						<div>
 							<div>
-								<h2> Donate </h2>
+								<h2>Donate</h2>
 								<h3>Upgrading the giving experience</h3>
-								<p>One of the most crucial areas to the ongoing success & day to day operations are public donations. It had been neglected at the Wisconsin Historical Foundation.</p>
+								<p>One of the most crucial areas to the ongoing success and day to day operations are public donations. It had been neglected at the Wisconsin Historical Foundation.</p>
 							</div>
 							<a class="button" href="donate.php">More Info</a>
 
@@ -77,7 +77,7 @@
 							<div>
 								<h2>Easy to Navigate</h2>
 								<h3>Historic Attraction Website Navigation</h3>
-								<p>As part of a simple web upgrade to 11 WordPress sites we also decided to improve the navigation system.</p>
+								<p>As part of a simple web upgrade to 11 WordPress sites, we also decided to improve the navigation system.</p>
 							</div>
 							<a class="button" href="historic-nav.php">More Info</a>
 
@@ -144,7 +144,7 @@
 									<h2> Timeline </h2>
 									<h3> ᛋᚻᚼ ᛄᛛᛟ ᛅᛔᛦᛯᛃᛂᚻᛛᛕ</h3>
 									<p> ᚯᚵᚾᛆᚿ ᚫᚥᛑᛝ ᛨᛩᛩᛛᛊᛃ ᚻᚼ ᚵᚶᚾᛋᛊᚺᛝᛏᛐ ᛅᛔᛦᛯ ᛥᛯᛌᛏᛐ ᚿᚸᚱ ᚱᚮᚯᚣ ᚣ ᚪᚫᛎ ᛈᚷ ᚪᚸᛔᛜᛒ ᛓᚠᚡ ᚿᛇᚾ ᚰᛛᛜᛞ ᛜᛛᛜ ᛄ ᚶᚱᛇ ᚤᚫᚸᛇᛖᛗᛯᛮᛮᛥ. </p>
-									<p class="smallcaption"> This project is under a confidentiality agreement, email me for a passcode </p>
+									<p class="smallcaption"> This project is under a confidentiality agreement, email me for a passcode. </p>
 								</div>
 							
 							
@@ -189,7 +189,7 @@
 							<h2> Social Care Client Plan </h2>
 							<h3> ᛋᛄᛛᛟᛃᛂᚻ ᚵᚶᚾᛋ ᛊᚺᛝᛏᛐᛛᛕ</h3>
 							<p> ᚵᚶᚾᛋᛊᚺᛝᛏᛐ ᚯᚵᚾᛆᚿ ᚫᚥᛑᛝ ᛨᛩᛩᛛᛊᛃ ᚻᚼᛅᛔᛦᛯ ᛜᛛᛜ ᛄ ᚿᚸᚱ ᚱᚮᚯᚣ ᚣ ᚪᚫᛎ ᛈᚷ ᚪᚸᛔᛜᛒ ᛓᚠᚡ ᚿᛇᚾ ᚰᛛᛜᛞ ᚶᚱᛇ ᚤᚫᚸᛇᛖ ᛥᛯᛌᛏᛐᛗᛯᛮᛮᛥ. </p>
-							<p class="smallcaption"> This project is under a confidentiality agreement, email me for a passcode </p>
+							<p class="smallcaption"> This project is under a confidentiality agreement, email me for a passcode. </p>
 						</div>
 						
 						<div class="pic protect">
@@ -231,9 +231,9 @@
 						<div class="chunk card">
 							<div class="protect">
 							<h2> Express Dispo </h2>
-							<h3> ᛋᛄᛛᛟᛃᛂᚻ ᚵᚶᚾᛋ ᛊᚺᛝᛏᛐᛛᛕ</h3>
-							<p> ᚵᚶᚾᛋᛊ ᚣᚪᚫᛎᚺᛝᛏᛐ ᚯᚵ ᚫᚥᛑᛝ  ᚿᛇᚾ ᚰᛛᛜᛞ ᛨᛩᛩᛛᚾᛆᚿᛊᛃ ᚻᚼᛅᛔᛦᛯ ᛄ ᚿᚸᚱ ᚱᚮᚯᚣ ᚣᚪᚫᛎ ᛈᚷ ᚪᚸᛔᛜᛒ ᛓᚠᚡ ᚶᚱᛇ ᚤᚫᚸᛇᛖ ᛜᛛᛜ ᛥᛯᛌᛏᛐᛗᛯᛮᛮᛥ. </p>
-							<p class="smallcaption"> This project is under a confidentiality agreement, email me for a passcode </p>
+							<h3>ᛋᛄᛛᛟᛃᛂᚻ ᚵᚶᚾᛋ ᛊᚺᛝᛏᛐᛛᛕ</h3>
+							<p>ᚵᚶᚾᛋᛊ ᚣᚪᚫᛎᚺᛝᛏᛐ ᚯᚵ ᚫᚥᛑᛝ  ᚿᛇᚾ ᚰᛛᛜᛞ ᛨᛩᛩᛛᚾᛆᚿᛊᛃ ᚻᚼᛅᛔᛦᛯ ᛄ ᚿᚸᚱ ᚱᚮᚯᚣ ᚣᚪᚫᛎ ᛈᚷ ᚪᚸᛔᛜᛒ ᛓᚠᚡ ᚶᚱᛇ ᚤᚫᚸᛇᛖ ᛜᛛᛜ ᛥᛯᛌᛏᛐᛗᛯᛮᛮᛥ.</p>
+							<p class="smallcaption">This project is under a confidentiality agreement, email me for a passcode.</p>
 						</div>
 						
 						<div class="pic protect">
@@ -252,7 +252,7 @@
 						<div>
 							<h2>Crowned</h2>
 							<h3>The Succesion of the British Monarchy</h3>
-							<p>Unraveling the complexity of a topic close to my nerdy heart, the relationships between monarchs in the UK. A website showcasing a timeline and a family tree. </p>
+							<p>Unraveling the complexity of a topic close to my nerdy heart, the relationships between monarchs in the UK, I built a website showcasing a timeline and a family tree. </p>
 						</div>
 						<a class="button" href="crowned.php">More Info</a>
 					</div>
