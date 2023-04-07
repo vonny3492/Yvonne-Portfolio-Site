@@ -36,6 +36,11 @@
 			"assignedTo" => "Truehold",
 			"assignedDate" => "Apr7"
 		),
+		"C@1!f0rn!@" => array(
+			"canAccess" => true,
+			"assignedTo" => "Continuity",
+			"assignedDate" => "Apr7"
+		),
 		"R!dd!ku1us" => array(
 			"canAccess" => true,
 			"assignedTo" => "Yvonne"
