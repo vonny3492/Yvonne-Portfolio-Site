@@ -41,6 +41,11 @@
 			"assignedTo" => "Continuity",
 			"assignedDate" => "Apr7"
 		),
+		"B3@uty" => array(
+			"canAccess" => true,
+			"assignedTo" => "Fenty",
+			"assignedDate" => "Apr17"
+		),
 		"R!dd!ku1us" => array(
 			"canAccess" => true,
 			"assignedTo" => "Yvonne"
