@@ -56,7 +56,7 @@
 				
 				<div>
 					<h1>Client Plan</h1>
-					<h3>Holistic Healing with Epic systems</h3>
+					<h2>Holistic Healing with Epic systems</h2>
 					<p>The future of health care in the United States is moving towards a more inclusive and holistic approach. Social Care is incorporating life events, family, friends into a patient's health plan. Social Care creates a series of goals and tasks that help the patient outside of traditional Western medicine.</p>
 					<p class="list-header">Goals</p>	
 					<ul>

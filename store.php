@@ -11,8 +11,8 @@
 			<section class="chunk half">
 				
 				<div>
-					<h1>Online Store Upgrade</h1>
-					<h3>Historic Attraction Website Navigation</h3>
+					<h1>Shopping History</h1>
+					<h2>Online Store Upgrade</h>
 					<p>A security breach gave us the opportunity (and necessity) to launch a new online store within a couple of weeks.</p>
 					<p class="list-header">Issues</p>	
 					<ul>

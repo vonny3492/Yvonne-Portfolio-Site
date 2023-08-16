@@ -57,7 +57,7 @@
 				
 				<div>
 					<h1>Express Dispo</h1>
-					<h3>Speeding up a speedy Epic systems process</h3>
+					<h2>Speeding up a speedy Epic systems process</h2>
 					<p>Emergency care needs to be quick. Decreasing the time it takes for patients to be processed and moved on, either out of the hospital or to another department, makes for better outcomes for them. The goal of this project was to take an already consolidated process and incorporate hierarchy and smart groupings to improve effeciency, clinician workflow, and quality of patient care.</p>
 					<p class="list-header">Issues</p>	
 					<ul>

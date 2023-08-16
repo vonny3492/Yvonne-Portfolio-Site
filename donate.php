@@ -12,7 +12,7 @@
 				
 				<div>
 					<h1>Get More Donations</h1>
-					<h3>Upgrading the giving experience</h3>
+					<h2>Upgrading the giving experience</h2>
 					<p>One of the most crucial areas to the ongoing success & day to day operations are public donations. It had been neglected at the Wisconsin Historical Foundation.</p>
 					<p class="list-header">Issues</p>	
 					<ul>

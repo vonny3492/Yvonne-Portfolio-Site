@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html>
 	<?php include 'head.php';?>
@@ -12,7 +11,7 @@
 				
 				<div>
 					<h1>Easy to Navigate</h1>
-					<h3>Historic Attraction Website Navigation</h3>
+					<h2>Historic Attraction Website Navigation</h2>
 					<p>As part of a simple web upgrade to 11 WordPress sites we also decided to improve the navigation system.</p>
 					<p class="list-header">Issues</p>	
 					<ul>
