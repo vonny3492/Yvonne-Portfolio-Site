@@ -12,7 +12,7 @@
 				
 				<div>
 					<h1>Shopping History</h1>
-					<h2>Online Store Upgrade</h>
+					<h2>Online Store Upgrade</h2>
 					<p>A security breach gave us the opportunity (and necessity) to launch a new online store within a couple of weeks.</p>
 					<p class="list-header">Issues</p>	
 					<ul>
