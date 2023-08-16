@@ -95,8 +95,8 @@
 					<div class="chunk card">
 						<div>
 							<div>
-								<h2>Online Store Upgrade</h2>
-								<h3>Historic Attraction Website Navigation</h3>
+								<h2>Shopping History</h2>
+								<h3>Online Store Upgrade</h3>
 								<p>A security breach gave us the opportunity (and necessity) to launch a new online store within a couple of weeks.</p>
 							</div>
 							<a class="button" href="store.php">More Info</a>
